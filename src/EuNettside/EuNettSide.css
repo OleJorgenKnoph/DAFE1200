@@ -1,0 +1,79 @@
+body {
+    font-family: sans-serif;
+}
+
+div {
+    width: 100%;
+}
+
+#Topptekst {
+    height: 100px;
+    display: flex;
+}
+    .EuCom {
+        color: grey;
+        text-align: left;
+        margin-left: 10px;
+        margin-top: 30px;
+        text-decoration: none;
+        border-right: 3px solid lightblue;
+    }
+    .EngelskSetting {
+        text-decoration: none;
+        margin-left: 1000px;
+        margin-right: 50px;
+        margin-top: 80px;
+
+    }
+    .SokeBar {
+        height: 30px;
+        width: 200px;
+        margin-top: 90px;
+        border-right: none;
+    }
+        .SokeKnapp {
+            height: 36.5px;
+            width: 100px;
+            margin-top: 90px;
+            text-space: 10px;
+            text-transform: uppercase;
+            color: blue;
+            background-color: lightgray;
+            border-left: none;
+            transition-duration: 0.1s;
+        }
+            .SokeKnapp:hover {
+                background-color: blue;
+                color: white;
+            }
+
+
+
+#OverSikt {
+    background-color: blue;
+    color: white;
+    height: 225px;
+    margin-top: 50px;
+}
+    .SideOversikt {
+        color: white;
+        padding: 20px;
+        border-bottom: 1px solid white;
+        margin: 25px;
+    }
+        .SideOversiktA {
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+        }
+        .SideOversiktA:hover {
+            border-bottom: 1px solid white;
+        }
+    .Overskrift {
+        padding: 30px;
+
+    }
+
+#Menu {
+
+}
