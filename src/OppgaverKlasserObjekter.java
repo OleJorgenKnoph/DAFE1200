@@ -1,5 +1,5 @@
 public class OppgaverKlasserObjekter {
-/*Oppgave 1 (&2)
+/*Oppgave 1 (&2?)
     static class Boker {
         public String tittel;
         public int pris;
@@ -22,7 +22,7 @@ public class OppgaverKlasserObjekter {
 
         System.out.print(nyBok.utskrift());
     }
-    */
+   */
 /*Oppgave 2*/
     public static void main (String [] args) {
 
