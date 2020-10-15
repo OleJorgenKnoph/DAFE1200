@@ -1,0 +1,214 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    /*Sørger for layouten*/
+    display: grid;
+    grid-template-areas:
+        'menu menu menu menu'
+        'content content content content'
+        'footer footer footer footer';
+
+/*Sørge for at innholdet dekker alt av skjermen*/
+    margin: 0;
+    font-family: Arial;
+}
+
+/*Tildele Grids og bakgrunnsfarge*/
+    .menu {
+        /*Tilordner klassen til grid-type menu, så layout blir slik som skrevet over*/
+        grid-area: menu;
+        background-color: #2F4454;
+        height: 12vh;
+        width: 100%;
+    }
+    .content {
+        grid-area: content;
+        background-color: #25274D;
+    }
+    .footer {
+        grid-area: footer;
+        background-color: #1C3334;
+    }
+
+/*Meny*/
+.ulMenu {
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed; /*Så den blir med hele veien*/
+    float: left;
+    display: inline;
+}
+    .menuLink {
+        text-decoration: none;
+        font-size: 23px;
+    }
+        .menuLink a {
+            color: #84CEEB;
+            display: block;
+            padding: 10px 18px 10px 18px;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+            .menuLink a:hover {
+                background-color: #84CEEB;
+                color: #2F4454;
+
+            }
+                .title {
+                /*margin-right: 270px;*/
+                color: #84CEEB;
+                font: bold;
+                font-size: 45px;
+                font-family: Arial;
+                letter-spacing: 3px;
+                padding: 5px;
+            }
+                .logo {
+                /*margin-right: 50px;*/
+            }
+
+/*de forskjellige sidene*/
+ div {
+     height: 725px;
+     overflow: hidden;
+ }
+
+ /*Bakgrunns-slide / 1 side*/
+    .bakgrunn {
+        position: relative;
+    }
+        #slagOrd {
+            position: absolute;
+            top: 120px;
+            left: 80px;
+            color: #84CEEB;
+            font-family: Arial;
+            font-style: bold;
+            font-size: 35px;
+            background-color: #2F4454;
+            opacity: 0.8;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+/*Overskrift hver side*/
+text {
+    font: bold;
+    font-size: 35px;
+    font-family: Arial;
+    -webkit-text-stroke: 1px lightskyblue;
+    color: #FEFFFF;
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 85px;
+}
+
+ /*KjopBiler siden*/
+#kjopBiler {
+    background-color: #376E6F;
+}
+    /*kjopBilder innhold*/
+       /*section*/ .bilene {
+                        position: relative;
+                        top: 100px;
+                        float: left;
+                        text-align: center;
+                        margin-left: 220px;
+                        margin-top: 50px;
+                   }
+             /*bilde*/   .bilBilde {
+                                height: 125px;
+                                width: 260px;
+                       }
+                         /*li bilnavn*/ .Bilnavn {
+                                                font-size: large;
+                                                 font-family: "Arial Black";
+                                        }
+                                        /*kjøp-knapp*/ .bilKnapp {
+                                                            height: 25px;
+                                                            width: 50px;
+                                                            background-color: #84CEEB;
+    color: ;
+                                                            border: 1px solid black;
+                                                            border-radius: 20px;
+
+                                                       }
+                                                       .bilKnapp:hover {
+                                                           background-color: #25274D;
+                                                           color: #FEFFFF;
+                                                           pointer-events: visibleFill;
+                                                       }
+
+
+/*bestillService*/
+#bestillService {
+    background-color: cadetblue;
+    display: compact;
+}
+        /*INPUT elementene*/ .serviceSkjema {
+                                    top: 160px;
+                                    position: relative;
+                                    text-align: center;
+                                    font-family: Arial;
+                             }
+                             pre {
+                                 font-family: Arial;
+                             }
+                                    .regBilKnapp {
+                                            color: #FEFFFF;
+                                            background-color: #376E6F;
+                                            height: 2.8rem;
+                                            border-radius: 20px;
+                                            font-weight: bolder;
+                                    }
+                                    .regBilKnapp:hover {
+                                        color: #376E6F;
+                                        background-color: #FEFFFF;
+                                    }
+
+/*omOss*/
+#omOss {
+    background-color: dimgray;
+}
+    /*Innholdet*/.omOssP {
+                    height: auto;
+                    width: 400px;
+                    position: relative;
+                    top: 200px;
+                    color: #FEFFFF;
+                    left: 35%;
+                     letter-spacing: 1px;
+    }
+
+
+/*Kontakt oss*/
+.kontaktOss {
+    font-family: arial;
+    color: #FEFFFF;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    left: 30px;
+}
+    #logoKontakt {
+        text-align: center;
+        position: relative;
+        top: 350px;
+        left: 30px;
+    }
+        #sosialeMedier {
+            padding: 20px;
+            height: 40px;
+            width: 40px;
+            border-radius: 10px;
+        }
+
+/*Siste linje / footer*/
+.footer {
+     color: white;
+     text-align: center;
+     font-size: 20px;
+     font: bold;
+    padding: 10px;
+ }
