@@ -13,7 +13,7 @@ body {
     margin: 0;
     font-family: Arial;
 }
-
+/*------------------------------------------------------------------------------------------------------------*/
 /*Tildele Grids og bakgrunnsfarge*/
     .menu {
         /*Tilordner klassen til grid-type menu, så layout blir slik som skrevet over*/
@@ -31,6 +31,7 @@ body {
         background-color: #1C3334;
     }
 
+/*------------------------------------------------------------------------------------------------------------*/
 /*Meny*/
 .ulMenu {
     list-style-type: none;
@@ -64,17 +65,18 @@ body {
                     padding: 5px;
                     float: left;
             }
-                .logo {
-                margin-right: 50px;
-                    float: left;
-            }
-
+                    .logo {
+                    margin-right: 50px;
+                        float: left;
+                }
+/*------------------------------------------------------------------------------------------------------------*/
 /*de forskjellige sidene*/
  div {
      height: 725px;
      overflow: hidden;
  }
 
+/*------------------------------------------------------------------------------------------------------------*/
  /*Bakgrunns-slide / 1 side*/
     .bakgrunn {
         position: relative;
@@ -92,7 +94,7 @@ body {
             border-radius: 20px;
             padding: 20px;
         }
-
+/*------------------------------------------------------------------------------------------------------------*/
 /*Overskrift hver side*/
 text {
     font: bold;
@@ -105,6 +107,7 @@ text {
     margin-top: 85px;
 }
 
+/*------------------------------------------------------------------------------------------------------------*/
  /*KjopBiler siden*/
 #kjopBiler {
     background-color: #376E6F;
@@ -144,7 +147,7 @@ text {
                                                           cursor: not-allowed;
                                                        }
 
-
+/*------------------------------------------------------------------------------------------------------------*/
 /*bestillService*/
 #bestillService {
     background-color: cadetblue;
@@ -186,6 +189,7 @@ text {
                                                     cursor: not-allowed;
                                                 }
 
+/*------------------------------------------------------------------------------------------------------------*/
 /*omOss*/
 #omOss {
     background-color: dimgray;
@@ -200,7 +204,7 @@ text {
                      letter-spacing: 1px;
     }
 
-
+/*------------------------------------------------------------------------------------------------------------*/
 /*Kontakt oss*/
 .kontaktOss {
     font-family: arial;
@@ -223,6 +227,7 @@ text {
             border-radius: 10px;
         }
 
+/*------------------------------------------------------------------------------------------------------------*/
 /*Siste linje / footer*/
 .footer {
      color: white;
