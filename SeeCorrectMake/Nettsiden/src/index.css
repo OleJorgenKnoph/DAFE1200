@@ -1,0 +1,60 @@
+html {
+    scroll-behavior: smooth; /*scroller smooth når kanpp trykkes og ikke hopper*/
+}
+body {
+    margin: 0; /*Dekke hele siden*/
+}
+
+.sideBar {
+    background-color: mediumseagreen;
+    width: 20vw;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.innholdSide {
+    width: 300vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
+    width: 100vw;
+    height: 100vh;
+}
+
+    .sideSlide1 {
+        background-color: indigo;
+    }
+        .nedreMeny {
+            margin-left: 20vw;
+            width: 80vw;
+            height: 21vh;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            z-index: 0;
+            bottom: 0;
+        }
+            .nedreMenyInfo1 {
+                background-color: lime;
+                width: 40vw;
+            }
+            .nedreMenyInfo2 {
+                background-color: lightsalmon;
+                width: 18vw;
+            }
+            .nedreMenyInfo3 {
+                background-color: darkgreen;
+                width: 40vw;
+            }
+
+    .sideSlide2 {
+        background-color: darkgoldenrod;
+    }
+
+    .sideSlide3 {
+        background-color: lime;
+    }
