@@ -6,12 +6,52 @@ body {
 }
 
 .sideBar {
-    background-color: mediumseagreen;
+    background-color: rgb(254,254,254);
     width: 20vw;
     height: 100%;
     position: fixed;
     z-index: 1;
 }
+
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2vh;
+        height: 32vh;
+        width: 26vh;
+    }
+            /*Disse klassen tilordnes i javascript når brukeren scroller*/
+            .sideBarCollapse {
+                width: 7vw;
+            }
+            .logoCollapse {
+                height: 10vh;
+                width: 7vh;
+            }
+    .slagOrd {
+        font-weight: bold;
+        font-size: 2vw;
+        display: flex;
+        justify-content: center;
+        font-family: "Arial Black";
+    }
+
+/*SIDEBAR-MENY*/
+.infoMeny {
+    list-style-type: none;
+    position: fixed;
+    bottom: 0;
+}
+    .infoMenyPunkt a {
+        text-decoration: none;
+        color: black;
+        padding: 15px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        font-size: 3vh;
+        justify-content: space-evenly;
+    }
 
 .innholdSide {
     width: 300vw;
@@ -26,8 +66,54 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
 }
 
     .sideSlide1 {
-        background-color: indigo;
+        background-color: rgb(177, 214, 241);
     }
+        .arrowRight {
+            width: 7vw;
+            height: 10vh;
+            background-color: white;
+            opacity: 0.5;
+            position: absolute;
+            right: 0;
+            top: 42vh;
+            cursor: pointer;
+        }
+        .arrowRight1 {
+            width: 7vw;
+            height: 10vh;
+            background-color: white;
+            opacity: 0.5;
+            position: absolute;
+            left: 193vw;
+            top: 42vh;
+            cursor: pointer;
+        }
+        .arrowLeft {
+            width: 7vw;
+            height: 10vh;
+            background-color: white;
+            opacity: 0.5;
+            position: absolute;
+            left: 193vw;
+            top: 52vh;
+            cursor: pointer;
+        }
+        .arrowLeft1 {
+            width: 7vw;
+            height: 10vh;
+            background-color: white;
+            opacity: 0.5;
+            position: absolute;
+            left: 293vw;
+            top: 52vh;
+            cursor: pointer;
+        }
+            #arrow {
+                position: absolute;
+                margin-top: 3.8vh;
+                margin-left: 3vw;
+
+            }
         .nedreMeny {
             margin-left: 20vw;
             width: 80vw;
@@ -39,15 +125,15 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
             bottom: 0;
         }
             .nedreMenyInfo1 {
-                background-color: lime;
+                background-color: rgb(248, 248, 248);
                 width: 40vw;
             }
             .nedreMenyInfo2 {
-                background-color: lightsalmon;
+                background-color: rgb(160, 198, 98);
                 width: 18vw;
             }
             .nedreMenyInfo3 {
-                background-color: darkgreen;
+                background-color: rgb(168, 18, 44);
                 width: 40vw;
             }
 

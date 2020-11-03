@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <title>University of Advancing Technology</title>
     <link rel="stylesheet" href="index.css">
+
     <!--Henter ikoner fra bibliotek-->
     <script src="https://kit.fontawesome.com/48a8e80ce3.js" crossorigin="anonymous"></script>
+
+    <!--Henter javascript-filen som sørger for at sideBaren kollapser når bruker scroller-->
+    <script src="index.js"></script>
 </head>
 <body>
 <!--Menyen på starten til venstre som faller inn -->
 <div class="sideBar">
-    <img class="logo" src="Images/UAT_logo.png">
+    <a href="index.html"> <img class="logo" src="Images/UAT_logo.png" ></a>
     <i class="slagOrd">
-        <pre><!--Sørger for at teksten formatteres slik som den skrives her -->
-            LEARN.
-            EXPERIENCE.
-            INNOVATE.
-    </pre></i>
+LEARN.<br>
+EXPERIENCE.<br>
+INNOVATE.<br>
+    </i>
 
     <ul class="infoMeny">
         <li class="infoMenyPunkt"> <a href="#" class="fas fa-info">REQUEST INFO</a> </li>
@@ -28,21 +31,28 @@
 </div>
 
 <div class="innholdSide">
-    <div class="sideSlide1"></div>
+    <div class="sideSlide1">
+
+        <div class="arrowRight" onclick="rightScroll()"><i class="fas fa-arrow-right" id="arrow"></i></div>
+
+    </div>
 
         <div class="nedreMeny">
 
-                <div class="nedreMenyInfo1">1</div>
-                <div class="nedreMenyInfo2">2</div>
-                <div class="nedreMenyInfo3">3</div>
+                <div class="nedreMenyInfo1"></div>
+                <div class="nedreMenyInfo2"></div>
+                <div class="nedreMenyInfo3"></div>
 
         </div>
 
     <div class="sideSlide2">
 
+        <div class="arrowRight1" onclick="rightScroll1()"><i class="fas fa-arrow-right" id="arrow"></i></div>
+        <div class="arrowLeft" onclick="leftScroll()"><i class="fas fa-arrow-left" id="arrow"></i></div>
     </div>
     <div class="sideSlide3">
 
+        <div class="arrowLeft1" onclick="leftScroll1()"><i class="fas fa-arrow-left" id="arrow"></i></div>
     </div>
 </div>
 </body>
