@@ -1,0 +1,88 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px 0px 0px 0px;
+}
+
+.sideBar {
+    margin: 0px 2vw 0px 0px;
+    border-right: 1px solid gray;
+    height: 100%;
+    width: 15vw;
+    background-color: mediumseagreen;
+    position: fixed;
+}
+
+.menu-ul {
+    list-style-type: none;
+    margin: 0;
+    align-items: center;
+}
+li[class^="menu-li"] {
+    text-decoration: none;
+}
+
+li[class^="menu-li"] a {
+           text-decoration: none;
+           color: indigo;
+           text-align: center;
+           display: block;
+           margin: 0px 0px;
+           height: 15vh;
+
+        font-size: 30px;
+       }
+            li[class^="menu-li"] a:hover {
+                background-color: seagreen;
+                transform: scale(1.1);
+                transition: transform 0.1s;
+            }
+
+            .menu-li-0 {
+                background-color: #1FAB89;
+            }
+            .menu-li-1 {
+                background-color: #62D2A2;
+            }
+            .menu-li-2 {
+                background-color: #9DF3C4;
+            }
+            .menu-li-3 {
+                background-color: #D7FBE8;
+            }
+            .menu-li-4 {
+                background-color: #F0FFF3;
+            }
+            .menu-li-5 {
+                background-color: lightgreen;
+            }
+.logo {
+    height: 16.7vh;
+    text-align: center;
+}
+
+
+div[class^="info"] {
+    background: lavenderblush;
+    margin: 0px 0px 0px 15vw;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+    .backgroundImage {
+        height: 120%;
+        width: 100%;
+        filter: blur(3px);
+        position: relative;
+    }
+        .hovedtekst {
+            color: white;
+            font-family: SansSerif;
+            font-size: 90px;
+            align-self: center;
+            margin-top: 25vh;
+            position: absolute;
+
+        }
