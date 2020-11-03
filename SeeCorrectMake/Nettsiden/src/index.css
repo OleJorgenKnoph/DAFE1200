@@ -67,7 +67,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
 
     .sideSlide1 {
         background-color: rgb(177, 214, 241);
-    }
+    } /*DIV-elementene rundt pilene. Kunne ikke gjøre alle sammen, da de ble liggende oppå hverandre og ikke ved riktig sted*/
         .arrowRight {
             width: 7vw;
             height: 10vh;
@@ -107,8 +107,8 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
             left: 293vw;
             top: 52vh;
             cursor: pointer;
-        }
-            #arrow {
+        }/*Pil-ikonene*/
+            i[class^="fas fa"]{
                 position: absolute;
                 margin-top: 3.8vh;
                 margin-left: 3vw;
