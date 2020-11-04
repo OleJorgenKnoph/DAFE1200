@@ -51,18 +51,19 @@ function leftScroll1() {
 /*Pilene som scroller i nedre venstre infomeny*/
 
 function plusSlides() {
+    /*Henter elementene i begge infomenyen på hovedside*/
     var slides1 = document.getElementsByClassName("slide1")[0];
     var slides2 = document.getElementsByClassName("slide2")[0];
 
+/*Sjekker:
+* Hvis slide1 = info 1 er vist (block) så endres slide 2 til block og slide 1 skjules med none og vice versa*/
         if (slides1.style.display === "block") {
-                slides2.style.display = "block";
-                slides1.style.display = "none";
-                    console.log("slides2 block plus");
+            slides2.style.display = "block";
+            slides1.style.display = "none";
         }
             else if (slides2.style.display === "block") {
                 slides1.style.display = "block";
                 slides2.style.display = "none";
-            console.log("slides1 block plus");
             }
 }
 function minusSlides() {
@@ -72,11 +73,53 @@ function minusSlides() {
         if (slides2.style.display === "block") {
             slides1.style.display = "block";
             slides2.style.display = "none";
-            console.log("slides1 block minus");
         }
             else if (slides1.style.display === "block") {
             slides2.style.display = "block";
             slides1.style.display = "none";
-            console.log("slides2 block minus");
         }
+}
+/*-----------------------------------------------------------------------------------------*/
+
+/*Pilene som scroller nede til høyre i infomeny*/
+function plusSlides1() {
+    /*Henter elementene i begge infomenyen på hovedside*/
+    var slides3 = document.getElementsByClassName("slide3")[0];
+    var slides4 = document.getElementsByClassName("slide4")[0];
+
+    /*Sjekker:
+    * Hvis slide1 = info 1 er vist (block) så endres slide 2 til block og slide 1 skjules med none og vice versa*/
+    if (slides3.style.display === "block") {
+        slides4.style.display = "block";
+        slides3.style.display = "none";
+    }
+    else if (slides4.style.display === "block") {
+                slides3.style.display = "block";
+                slides4.style.display = "none";
+    }
+}
+function minusSlides1() {
+    var slides3 = document.getElementsByClassName("slide3")[0];
+    var slides4 = document.getElementsByClassName("slide4")[0];
+
+    if (slides4.style.display === "block") {
+        slides3.style.display = "block";
+        slides4.style.display = "none";
+    }
+    else if (slides3.style.display === "block") {
+        slides4.style.display = "block";
+        slides3.style.display = "none";
+    }
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+/*funksjon som sørger for at ordene skifter på hovedsiden hvert 3 sekund*/
+setInterval(skiftOrd, 3000);
+
+function skiftOrd() {
+    var ordene = ["PIXELS", "QUBIT", "FIREWALL"];
+    for (var i = 0; i < ordene.length; i++){
+        document.getElementsByClassName("dynamicOrd")[0].innerHTML = ordene[i];
+    }
 }

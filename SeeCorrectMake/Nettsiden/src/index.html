@@ -20,7 +20,7 @@ LEARN.<br>
 EXPERIENCE.<br>
 INNOVATE.<br>
     </i>
-
+    <!--Meny listen nederst--->
     <ul class="infoMeny">
         <li class="infoMenyPunkt"> <a href="#" class="fas fa-info">REQUEST INFO</a> </li>
         <li class="infoMenyPunkt"> <a href="#"  class="fas fa-phone">(800)658-5744</a> </li>
@@ -32,27 +32,39 @@ INNOVATE.<br>
 
 <div class="innholdSide">
     <div class="sideSlide1">
-
+<!--Pil for scroll høyre-->
         <div class="arrowRight" onclick="rightScroll()"><i class="slide fas fa-arrow-right"></i></div>
+<!--bakgrunns-bilde-->
+            <img class="img1" src="Images/backgroundSlide3.jpeg">
+<!--Tittel-->
+        <div class="hovedskrift">
+            <h1>WE ARE UAT<br>
+                <span class="span">
+                    THINK OUTSIDE <br>
+                    THE <div class="dynamicOrd"></div>
+                </span>
+            </h1>
+        </div>
+
 
     </div>
-
-        <div class="nedreMeny">
+    <!--Nedre info-meny på første hovedside--->
+    <div class="nedreMeny">
 
                 <div class="nedreMenyInfo1">
                     <i class="info1Overskrift"><b>ANNOUNCEMENTS</b></i>
 <!--Piler som slider teksten-->
-                    <i class="infoPil1 fas fa-angle-left" onclick="minusSlides()"></i>
-                    <i class="infoPil2 fas fa-angle-right" onclick="plusSlides()"></i>
+                    <i class="infoPil" onclick="plusSlides()"> > </i>
+                    <i class="infoPil" onclick="minusSlides()"> < </i>
 <!--container for teksten-->
                     <div class="infoSlideShow">
 <!--Tekstene som skal slide-->
-                        <div class="slide1">
+                        <div class="slide1" style="display: block">
                             <b>FALL SEMESTER UPDATES</b><br>
                             Check out our guide for Episode 2020: <br>
                             Return of the Geeks […]
                         </div>
-                        <div class="slide2">
+                        <div class="slide2"style="display: none">
                             <b>COVID-19 UPDATES</b><br>
                             Precautions we're taking in an effort to <br>
                             protect our UAT family […]
@@ -60,17 +72,36 @@ INNOVATE.<br>
                     </div>
                 </div>
                 <div class="nedreMenyInfo2"></div>
-                <div class="nedreMenyInfo3"></div>
+                <div class="nedreMenyInfo3">
+
+                        <i class="info3Overskrift"><b>NEWS & EVENTS</b></i>
+                        <!--Piler som slider teksten-->
+                        <i class="pilInfo" onclick="plusSlides1()"> > </i>
+                        <i class="pilInfo" onclick="minusSlides1()"> < </i>
+                        <!--container for teksten-->
+                        <div class="infoSlideShow1">
+                            <!--Tekstene som skal slide-->
+                            <div class="slide3" style="display: block">
+                                <b>WHAT I WISH I KNEW </b><br>
+                                Professor Peters shares what she <br>
+                                wished she knew before college […]
+                            </div>
+                            <div class="slide4"style="display: none">
+                                <b>UAT REFURBATHON RESULTS</b><br>
+                                UAT student build 121 free computers <br>
+                                for Title 1 Schools […]
+                            </div>
+                        </div>
+                </div>
 
         </div>
-
     <div class="sideSlide2">
-
+<!--Pil for scroll høyre og venstre--->
         <div class="arrowRight1" onclick="rightScroll1()"><i class="slide fas fa-arrow-right"></i></div>
         <div class="arrowLeft" onclick="leftScroll()"><i class="slide fas fa-arrow-left"></i></div>
     </div>
     <div class="sideSlide3">
-
+<!--Pil for scroll venstre--->
         <div class="arrowLeft1" onclick="leftScroll1()"><i class="slide fas fa-arrow-left"></i></div>
     </div>
 </div>
