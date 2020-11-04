@@ -21,6 +21,8 @@ body {
         background-color: #2F4454;
         height: 12vh;
         width: 100%;
+        position: fixed;
+        z-index: 1;
     }
     .content {
         grid-area: content;
