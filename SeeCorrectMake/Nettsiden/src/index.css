@@ -53,10 +53,15 @@ body {
         color: indigo;
         padding: 15px;
         letter-spacing: 1px;
-        font-weight: bold;
-        font-size: 3vh;
+        font-weight: bolder;
+        font-size: 1.4vw;
         justify-content: space-evenly;
     }
+/*forstørrer skriften menyen når musa er over*/
+        .infoMenyPunkt a:hover {
+            transform: scale(1.3);
+            transition: transform 0.1s;
+        }
 /*---------------------------------------------------------------------------------------*/
 /*Hele siden med de tre hovedsidene*/
 .innholdSide {
@@ -99,7 +104,42 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
 /*skriften som varierer ord*/
         .dynamicOrd {
             display: inline;
+            -webkit-animation: fadeIn ease 3s infinite;
         }
+        @-webkit-keyframes fadeIn {
+            0% {
+                opacity:0;
+            }
+            10% {
+                opacity: .2;
+            }
+            20% {
+                opacity: .4;
+            }
+            30% {
+                opacity: .6;
+            }
+            40% {
+                opacity: 8;
+            }
+            50% {
+                opacity: 1;
+            }
+            60% {
+                opacity: .8;
+            }
+            70% {
+                opacity: .6;
+            }
+            80% {
+                opacity: .4;
+            }
+            90% {
+                opacity: .2;
+            }
+            100% {
+                opacity:0;
+            }}
 /*---------------------------------------------------------------------------------------*/
 /*DIV-elementene rundt pilene. Kunne ikke gjøre alle sammen, da de ble liggende oppå hverandre og ikke ved riktig sted*/
         .arrowRight {
@@ -181,9 +221,10 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
                 }
 /*de to info-skrivene nede til venstre*/
                 .slide1 , .slide2 {
-                    margin-top: 4vh;
                     float: left;
+                    margin-top: 4vh;
                     margin-left: 1vw;
+                    position: fixed;
                 }
 /*PIL til høyre og venstre*/
                     i[class^="infoPil"]{
@@ -196,11 +237,10 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
                         padding: 5px;
                         background-color: rgb(54, 54, 60);
                         color: white;
-
                     }
 /*Begge pilene kommer "ut" når man har pil over hver enkelt*/
                 i[class^="infoPil"]:hover {
-                    transform: scale(1.1);
+                    transform: scale(1.2);
                     transition: transform 0.1s;
                 }
 /*---------------------------------------------------------------------------------------*/
@@ -229,6 +269,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
                         margin-top: 4vh;
                         margin-left: 1vw;
                         color: white;
+                        position: fixed;
                     }
 /*PIL til høyre og venstre*/
                     i[class^="pilInfo"]{
@@ -240,11 +281,10 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
                         width: 3vw;
                         padding: 5px;
                         color: white;
-
                     }
 /*Begge pilene kommer "ut" når man har pil over hver enkelt*/
                     i[class^="pilInfo"]:hover {
-                        transform: scale(1.1);
+                        transform: scale(1.5);
                         transition: transform 0.1s;
                     }
 /*---------------------------------------------------------------------------------------*/

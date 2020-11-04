@@ -118,9 +118,16 @@ function minusSlides1() {
 setInterval(skiftOrd, 3000);
 
 function skiftOrd() {
-    var ordene = ["PIXELS", "QUBIT", "FIREWALL"];
-        for (var i = 0; i < ordene.Infinity; i++){
-            document.getElementsByClassName("dynamicOrd")[0].innerHTML = ordene[i];
-        }
-        console.log(i);
+    var dynamiskOrd = document.getElementsByClassName("dynamicOrd")[0];
+
+    if (dynamiskOrd.innerHTML === "PIXELS") {
+        dynamiskOrd.innerHTML = "QUBIT";
+
+        } else if (dynamiskOrd.innerHTML === "QUBIT") {
+            dynamiskOrd.innerHTML = "FIREWALL";
+
+                } else if (dynamiskOrd.innerHTML === "FIREWALL") {
+                    dynamiskOrd.innerHTML = "PIXELS";
+    }
 }
+/*-----------------------------------------------------------------------------------------*/
