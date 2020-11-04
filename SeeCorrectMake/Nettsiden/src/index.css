@@ -86,7 +86,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
             width: 100vw;
             opacity: 0.4;
         }
-/*DIV-elemente med skriften på siden*/
+/*DIV-elemente med skriften på hovedsiden*/
         .hovedskrift {
             left: 30vw;
             position: absolute;
@@ -95,51 +95,95 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
             color: indigo;
 
         }
-/*skriften som skal være større*/
-        .span {
-            font-weight: bolder;
-            font-size: 10vh;
-            letter-spacing: .2vh;
+    /*Skriften som skal være større*/
+            .span {
+                font-weight: bolder;
+                font-size: 10vh;
+                letter-spacing: .2vh;
+            }
+        /*skriften som varierer ord*/
+                .dynamicOrd {
+                    display: inline;
+                    -webkit-animation: fadeIn ease 3s infinite;
+                }
+                @-webkit-keyframes fadeIn {
+                    0% {
+                        opacity:0;
+                    }
+                    10% {
+                        opacity: .2;
+                    }
+                    20% {
+                        opacity: .4;
+                    }
+                    30% {
+                        opacity: .6;
+                    }
+                    40% {
+                        opacity: 8;
+                    }
+                    50% {
+                        opacity: 1;
+                    }
+                    60% {
+                        opacity: .8;
+                    }
+                    70% {
+                        opacity: .6;
+                    }
+                    80% {
+                        opacity: .4;
+                    }
+                    90% {
+                        opacity: .2;
+                    }
+                    100% {
+                        opacity:0;
+                    }}
+/*DEGREE dropdown div*/
+.degreeDrop {
+    display: block;
+    padding: 16px 8px;
+    border-bottom: 3px solid indigo;
+    position: absolute;
+    left: 30vw;
+    top: 50vh;
+    cursor: pointer;
+    color: indigo;
+    font-weight: bold;
+}
+/*dropdown pilen*/
+    .degree-pil {
+        float: right;
+        margin-left: 10px;
+    }
+/*Dropdown div studier*/
+        .theDegreesDropdown {
+            display: none;
+
+            text-decoration: none;
+            position: absolute;
+            left: 30vw;
+            top: 57vh;
+            text-align: center;
+            width: 37.6vh;
+            height: 43vh;
+            background: indigo;
+            color: white;
+            opacity: .7;
+            z-index: 1;
+            overflow: auto;
+            cursor: pointer;
         }
-/*skriften som varierer ord*/
-        .dynamicOrd {
-            display: inline;
-            -webkit-animation: fadeIn ease 3s infinite;
-        }
-        @-webkit-keyframes fadeIn {
-            0% {
-                opacity:0;
+        /*Dropdown alle studiene*/
+            .theDegrees {
+                padding: 10px;
+                display: block;
             }
-            10% {
-                opacity: .2;
-            }
-            20% {
-                opacity: .4;
-            }
-            30% {
-                opacity: .6;
-            }
-            40% {
-                opacity: 8;
-            }
-            50% {
-                opacity: 1;
-            }
-            60% {
-                opacity: .8;
-            }
-            70% {
-                opacity: .6;
-            }
-            80% {
-                opacity: .4;
-            }
-            90% {
-                opacity: .2;
-            }
-            100% {
-                opacity:0;
-            }}
+                .theDegrees:hover {
+                    transform: scale(1.3);
+                    transition: transform 0.1s;
+                }
 /*---------------------------------------------------------------------------------------*/
 /*DIV-elementene rundt pilene. Kunne ikke gjøre alle sammen, da de ble liggende oppå hverandre og ikke ved riktig sted*/
         .arrowRight {
@@ -224,7 +268,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
                     float: left;
                     margin-top: 4vh;
                     margin-left: 1vw;
-                    position: fixed;
+                    position: relative;
                 }
 /*PIL til høyre og venstre*/
                     i[class^="infoPil"]{
@@ -269,7 +313,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
                         margin-top: 4vh;
                         margin-left: 1vw;
                         color: white;
-                        position: fixed;
+                        position: relative;
                     }
 /*PIL til høyre og venstre*/
                     i[class^="pilInfo"]{

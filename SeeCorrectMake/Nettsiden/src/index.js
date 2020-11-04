@@ -131,3 +131,21 @@ function skiftOrd() {
     }
 }
 /*-----------------------------------------------------------------------------------------*/
+/*Funksjon som sørger for at alle studiene droppes ned og pila roterer*/
+
+function dropDownDegree() {
+    let dropdown = document.getElementsByClassName("theDegreesDropdown")[0];
+    let pilElement = document.getElementsByClassName("degree-pil")[0];
+console.log("HEI");
+    if (dropdown.style.display = 'none'){
+        pilElement.style.transform = 'rotate(180deg)';
+        dropdown.style.display = "block";
+        console.log("1");
+    }
+    /*DENNE FUNKER IKKE*/
+        else if (dropdown.element.style.display === "block"){
+            pilElement.style.transform = 'rotate(180deg)';
+            dropdown.style.display = "none";
+        console.log("2");
+    }
+}
