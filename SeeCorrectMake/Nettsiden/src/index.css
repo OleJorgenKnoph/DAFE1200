@@ -88,6 +88,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
             top: 10vh;
             font-family: Arial;
             color: indigo;
+
         }
 /*skriften som skal være større*/
         .span {

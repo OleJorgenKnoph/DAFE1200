@@ -119,7 +119,8 @@ setInterval(skiftOrd, 3000);
 
 function skiftOrd() {
     var ordene = ["PIXELS", "QUBIT", "FIREWALL"];
-    for (var i = 0; i < ordene.length; i++){
-        document.getElementsByClassName("dynamicOrd")[0].innerHTML = ordene[i];
-    }
+        for (var i = 0; i < ordene.Infinity; i++){
+            document.getElementsByClassName("dynamicOrd")[0].innerHTML = ordene[i];
+        }
+        console.log(i);
 }
