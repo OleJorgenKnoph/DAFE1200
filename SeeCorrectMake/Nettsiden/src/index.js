@@ -35,16 +35,6 @@ function scrollFunction() {
 /*-----------------------------------------------------------------------------------------*/
 /*Side-pilene som scroller høyre og venstre*/
 
-/*var arrowright = document.getElementsByClassName("arrowRight");
-var arrowright1 = document.getElementsByClassName("arrowRight1");
-var arrowleft = document.getElementsByClassName("arrowLeft");
-var arrowleft1 = document.getElementsByClassName("arrowLeft1");
-
-arrowright.addEventListener("click", rightScroll);
-arrowright1.addEventListener("click", rightScroll1);
-arrowleft.addEventListener("click", leftScroll);
-arrowleft1.addEventListener("click", leftScroll1);*/
-
 function rightScroll() {
     document.getElementsByClassName("sideSlide2")[0].scrollIntoView();
 }
@@ -56,4 +46,37 @@ function leftScroll() {
 }
 function leftScroll1() {
     document.getElementsByClassName("sideSlide2")[0].scrollIntoView();
+}
+/*-----------------------------------------------------------------------------------------*/
+/*Pilene som scroller i nedre venstre infomeny*/
+
+function plusSlides() {
+    var slides1 = document.getElementsByClassName("slide1")[0];
+    var slides2 = document.getElementsByClassName("slide2")[0];
+
+        if (slides1.style.display === "block") {
+                slides2.style.display = "block";
+                slides1.style.display = "none";
+                    console.log("slides2 block plus");
+        }
+            else if (slides2.style.display === "block") {
+                slides1.style.display = "block";
+                slides2.style.display = "none";
+            console.log("slides1 block plus");
+            }
+}
+function minusSlides() {
+    var slides1 = document.getElementsByClassName("slide1")[0];
+    var slides2 = document.getElementsByClassName("slide2")[0];
+
+        if (slides2.style.display === "block") {
+            slides1.style.display = "block";
+            slides2.style.display = "none";
+            console.log("slides1 block minus");
+        }
+            else if (slides1.style.display === "block") {
+            slides2.style.display = "block";
+            slides1.style.display = "none";
+            console.log("slides2 block minus");
+        }
 }

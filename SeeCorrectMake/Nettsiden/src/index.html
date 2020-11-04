@@ -14,7 +14,7 @@
 <body>
 <!--Menyen på starten til venstre som faller inn -->
 <div class="sideBar">
-    <a href="index.html"> <img class="logo" src="Images/UAT_logo.png" ></a>
+    <a href="index.html"> <img alt="logo" class="logo" src="Images/UAT_logo.png" ></a>
     <i class="slagOrd">
 LEARN.<br>
 EXPERIENCE.<br>
@@ -33,13 +33,32 @@ INNOVATE.<br>
 <div class="innholdSide">
     <div class="sideSlide1">
 
-        <div class="arrowRight" onclick="rightScroll()"><i class="fas fa-arrow-right"></i></div>
+        <div class="arrowRight" onclick="rightScroll()"><i class="slide fas fa-arrow-right"></i></div>
 
     </div>
 
         <div class="nedreMeny">
 
-                <div class="nedreMenyInfo1"></div>
+                <div class="nedreMenyInfo1">
+                    <i class="info1Overskrift"><b>ANNOUNCEMENTS</b></i>
+<!--Piler som slider teksten-->
+                    <i class="info1 fas fa-angle-left" onclick="minusSlides()"></i>
+                    <i class="info2 fas fa-angle-right" onclick="plusSlides()"></i>
+<!--container for teksten-->
+                    <div class="infoSlideShow">
+<!--Tekstene som skal slide-->
+                        <div class="slide1">
+                            <b>FALL SEMESTER UPDATES</b><br>
+                            Check out our guide for Episode 2020: <br>
+                            Return of the Geeks […]
+                        </div>
+                        <div class="slide2">
+                            <b>COVID-19 UPDATES</b><br>
+                            Precautions we're taking in an effort to <br>
+                            protect our UAT family […]
+                        </div>
+                    </div>
+                </div>
                 <div class="nedreMenyInfo2"></div>
                 <div class="nedreMenyInfo3"></div>
 
@@ -47,12 +66,12 @@ INNOVATE.<br>
 
     <div class="sideSlide2">
 
-        <div class="arrowRight1" onclick="rightScroll1()"><i class="fas fa-arrow-right"></i></div>
-        <div class="arrowLeft" onclick="leftScroll()"><i class="fas fa-arrow-left"></i></div>
+        <div class="arrowRight1" onclick="rightScroll1()"><i class="slide fas fa-arrow-right"></i></div>
+        <div class="arrowLeft" onclick="leftScroll()"><i class="slide fas fa-arrow-left"></i></div>
     </div>
     <div class="sideSlide3">
 
-        <div class="arrowLeft1" onclick="leftScroll1()"><i class="fas fa-arrow-left"></i></div>
+        <div class="arrowLeft1" onclick="leftScroll1()"><i class="slide fas fa-arrow-left"></i></div>
     </div>
 </div>
 </body>
