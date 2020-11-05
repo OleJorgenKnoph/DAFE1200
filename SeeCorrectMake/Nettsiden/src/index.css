@@ -159,8 +159,6 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
     }
 /*Dropdown div studier*/
         .theDegreesDropdown {
-            display: none;
-
             text-decoration: none;
             position: absolute;
             left: 30vw;

@@ -134,18 +134,19 @@ function skiftOrd() {
 /*Funksjon som sørger for at alle studiene droppes ned og pila roterer*/
 
 function dropDownDegree() {
+/*Henter nødvending elementer*/
     let dropdown = document.getElementsByClassName("theDegreesDropdown")[0];
     let pilElement = document.getElementsByClassName("degree-pil")[0];
-console.log("HEI");
-    if (dropdown.style.display = 'none'){
+
+/*Sleit med denne. Denne ble alltid 'true'. Løsning var condition under*/
+    /*henter alle CSS-verdiene til elementet "dropdown". Henter så propertyValue av denne og sjekker om den === none*/
+    if (window.getComputedStyle(dropdown).getPropertyValue("display") === "none"){
         pilElement.style.transform = 'rotate(180deg)';
         dropdown.style.display = "block";
-        console.log("1");
     }
-    /*DENNE FUNKER IKKE sjekk*/ /*hmm*/
-        else if (dropdown.element.style.display === "block"){
-            pilElement.style.transform = 'rotate(180deg)';
+    else {
+            pilElement.style.transform = "rotate(180deg)";
             dropdown.style.display = "none";
-        console.log("2");
     }
 }
+/*-----------------------------------------------------------------------------------------*/
