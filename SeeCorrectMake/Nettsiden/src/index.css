@@ -369,14 +369,78 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
     .degreeFlipDiv {
         width: 40vw;
         height: 100vh;
-        background-color: lightsalmon;
     }
+    /*DIV for å sortere cards*/
+        .degreeCards {
+            display: grid;
+            grid-template-columns: 20vw 20vw;
+            height: 100vh;
+        }
+            .cards {
+                width: 20vw;
+                height: 33vh;
+                text-align: center;
+                border: 1px black;
+                text-transform: uppercase;
+                color: indigo;
+                font-size: 4vh;
+            }
+            /*Sørger for at de kortene har forskjellig farger*/
+                div[class*="cards1"] {
+                    background: rgb(248, 248, 248);
+                }
+                div[class*="cards2"] {
+                    background: rgb(240, 240, 240);
+                }
+                /*ikoner og skrift*/
+                i[class^="cards"]{
+                    padding-top: 5px;
+                    size: auto;
+
+                }
+
+                .flipCard1 {
+                    background-color: transparent;
+                    width: 20vw;
+                    height: 33vh;
+                    border: 1px solid #f1f1f1;
+                    perspective: 1000px;
+                }
+                    .flipCardInner1 {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        transition: transform 0.8s;
+                        transform-style: preserve-3d;
+                    }
+                        .flipCard1:hover .flipCardInner1 {
+                            transform: rotateY(180deg);
+                        }
+                            .cards11, .baksideFlip1 {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                -webkit-backface-visibility: hidden; /* Safari */
+                                backface-visibility: hidden;
+                            }
+                                .baksideFlip1 {
+                                    background-color: dodgerblue;
+                                    color: white;
+                                    transform: rotateY(180deg);
+                                    letter-spacing: 1px;
+                                    line-height: 3.8vh;
+                                }
+                                    .overskriftFlipCard {
+                                        font-weight: bolder;
+                                        font-size: 4vh;
+                                    }
 
 /*Høyre DIV med bildet*/
     .slide2sideBildet {
         width: 30vw;
         height: 100vh;
-        background-color: black;
+        background-color: ;
     }
 
 /*---------------------------------------------------------------------------------------*/
