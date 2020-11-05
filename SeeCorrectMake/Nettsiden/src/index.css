@@ -27,6 +27,7 @@ body {
             /*Disse klassen tilordnes i javascript når brukeren scroller*/
             .sideBarCollapse {
                 width: 7vw;
+                box-shadow: 7px 0 15px -2px rgb(75,13,128);
             }
             .logoCollapse {
                 height: 12vh;
@@ -166,9 +167,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
             text-align: center;
             width: 37.6vh;
             height: 43vh;
-            background: indigo;
             color: white;
-            opacity: .7;
             z-index: 1;
             overflow: auto;
             cursor: pointer;
@@ -177,10 +176,13 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
             .theDegrees {
                 padding: 10px;
                 display: block;
+                background: indigo;
+                opacity: .7;
             }
                 .theDegrees:hover {
                     transform: scale(1.3);
                     transition: transform 0.1s;
+                    opacity: 1;
                 }
 /*---------------------------------------------------------------------------------------*/
 /*DIV-elementene rundt pilene. Kunne ikke gjøre alle sammen, da de ble liggende oppå hverandre og ikke ved riktig sted*/
@@ -230,7 +232,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
                 position: absolute;
                 margin-top: 3.8vh;
                 margin-left: 3vw;
-
+                color: indigo;
             }
 /*---------------------------------------------------------------------------------------*/
 /*Hele nedre info-meny*/
@@ -332,8 +334,51 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
 /*---------------------------------------------------------------------------------------*/
 /*Midtre hovedside*/
     .sideSlide2 {
-        background-color: darkgoldenrod;
+        display: flex;
     }
+
+/*Venstre DIV med tittel*/
+    .sideOverskrift {
+        width: 30vw;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+    }
+    /*Egen container for å kunne stå sidelengs*/
+        .sideOverskriftContainer {
+            color: rgb(75, 12, 128);
+            height: 15vw;
+            width: 100vh;
+            position: absolute;
+            transform: rotate(-90deg);
+            top: 32vh;
+            left: 90vw;
+        }
+        /*FIND YOUR FIT*/
+            .hovedSideOverskrift {
+                font-weight: bold;
+                font-size: 70px;
+                text-transform: uppercase;
+            }
+            /*Explore our degrees*/
+                .underSideOverskrift{
+                    font-size: 40px;
+                    font-weight: lighter;
+                }
+
+/*Midtre DIV med info-cards*/
+    .degreeFlipDiv {
+        width: 40vw;
+        height: 100vh;
+        background-color: lightsalmon;
+    }
+
+/*Høyre DIV med bildet*/
+    .slide2sideBildet {
+        width: 30vw;
+        height: 100vh;
+        background-color: black;
+    }
+
 /*---------------------------------------------------------------------------------------*/
 /*Høyre hovedside*/
     .sideSlide3 {
