@@ -47,16 +47,17 @@ function leftScroll() {
 function leftScroll1() {
     document.getElementsByClassName("sideSlide2")[0].scrollIntoView();
 }
+
 /*-----------------------------------------------------------------------------------------*/
 /*Pilene som scroller i nedre venstre infomeny*/
 
 function plusSlides() {
     /*Henter elementene i begge infomenyen på hovedside*/
-    var slides1 = document.getElementsByClassName("slide1")[0];
-    var slides2 = document.getElementsByClassName("slide2")[0];
+    let slides1 = document.getElementsByClassName("slide1")[0];
+    let slides2 = document.getElementsByClassName("slide2")[0];
 
-/*Sjekker:
-* Hvis slide1 = info 1 er vist (block) så endres slide 2 til block og slide 1 skjules med none og vice versa*/
+    /*Sjekker:
+    * Hvis slide1 = info 1 er vist (block) så endres slide 2 til block og slide 1 skjules med none og vice versa*/
         if (slides1.style.display === "block") {
             slides2.style.display = "block";
             slides1.style.display = "none";
@@ -67,10 +68,10 @@ function plusSlides() {
             }
 }
 function minusSlides() {
-    var slides1 = document.getElementsByClassName("slide1")[0];
-    var slides2 = document.getElementsByClassName("slide2")[0];
+    let slides1 = document.getElementsByClassName("slide1")[0];
+    let slides2 = document.getElementsByClassName("slide2")[0];
 
-        if (slides2.style.display === "block") {
+    if (slides2.style.display === "block") {
             slides1.style.display = "block";
             slides2.style.display = "none";
         }
@@ -79,13 +80,14 @@ function minusSlides() {
             slides1.style.display = "none";
         }
 }
+
 /*-----------------------------------------------------------------------------------------*/
 
 /*Pilene som scroller nede til høyre i infomeny*/
 function plusSlides1() {
     /*Henter elementene i begge infomenyen på hovedside*/
-    var slides3 = document.getElementsByClassName("slide3")[0];
-    var slides4 = document.getElementsByClassName("slide4")[0];
+    let slides3 = document.getElementsByClassName("slide3")[0];
+    let slides4 = document.getElementsByClassName("slide4")[0];
 
     /*Sjekker:
     * Hvis slide1 = info 1 er vist (block) så endres slide 2 til block og slide 1 skjules med none og vice versa*/
@@ -99,8 +101,8 @@ function plusSlides1() {
     }
 }
 function minusSlides1() {
-    var slides3 = document.getElementsByClassName("slide3")[0];
-    var slides4 = document.getElementsByClassName("slide4")[0];
+    let slides3 = document.getElementsByClassName("slide3")[0];
+    let slides4 = document.getElementsByClassName("slide4")[0];
 
     if (slides4.style.display === "block") {
         slides3.style.display = "block";
@@ -118,7 +120,7 @@ function minusSlides1() {
 setInterval(skiftOrd, 3000);
 
 function skiftOrd() {
-    var dynamiskOrd = document.getElementsByClassName("dynamicOrd")[0];
+    let dynamiskOrd = document.getElementsByClassName("dynamicOrd")[0];
 
     if (dynamiskOrd.innerHTML === "PIXELS") {
         dynamiskOrd.innerHTML = "QUBIT";
@@ -130,6 +132,7 @@ function skiftOrd() {
                     dynamiskOrd.innerHTML = "PIXELS";
     }
 }
+
 /*-----------------------------------------------------------------------------------------*/
 /*Funksjon som sørger for at alle studiene droppes ned og pila roterer*/
 
@@ -149,4 +152,5 @@ function dropDownDegree() {
             dropdown.style.display = "none";
     }
 }
+
 /*-----------------------------------------------------------------------------------------*/

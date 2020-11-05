@@ -1,10 +1,10 @@
 html {
-    scroll-behavior: smooth; /*scroller smooth når kanpp trykkes og ikke hopper*/
+    scroll-behavior: smooth; /*scroller smooth når knapp trykkes og ikke hopper*/
 }
 /*---------------------------------------------------------------------------------------*/
 body {
     margin: 0; /*Dekke hele siden*/
-    font-family: "Arial";
+    font-family: "Arial", serif;
 }
 /*---------------------------------------------------------------------------------------*/
 .sideBar {
@@ -39,7 +39,7 @@ body {
         font-size: 2vw;
         display: flex;
         justify-content: center;
-        font-family: "Arial Black";
+        font-family: "Arial Black", serif;
         color: indigo;
     }
 /*---------------------------------------------------------------------------------------*/
@@ -92,7 +92,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
             left: 30vw;
             position: absolute;
             top: 10vh;
-            font-family: Arial;
+            font-family: Arial, serif;
             color: indigo;
 
         }
@@ -336,7 +336,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
     .sideSlide2 {
         display: flex;
     }
-
+/*---------------------------------------------------------------------------------------*/
 /*Venstre DIV med tittel*/
     .sideOverskrift {
         width: 30vw;
@@ -364,7 +364,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
                     font-size: 40px;
                     font-weight: lighter;
                 }
-
+/*---------------------------------------------------------------------------------------*/
 /*Midtre DIV med info-cards*/
     .degreeFlipDiv {
         width: 40vw;
@@ -532,7 +532,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
                             .flipCard6:hover .flipCardInner6 {
                         transform: rotateY(180deg);
                     }
-
+/*---------------------------------------------------------------------------------------*/
 /*Høyre DIV med bildet*/
     .slide2sideBildet {
         width: 30vw;
