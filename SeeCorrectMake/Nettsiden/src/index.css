@@ -258,7 +258,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
                         color: rgb(68, 58, 54);
                     }
         /*Overskrift announcements*/
-   -                     .info1Overskrift {
+                        .info1Overskrift {
                            position: relative;
                             top: 7px;
                         }
@@ -551,68 +551,154 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
         }
 
 /*---------------------------------------------------------------------------------------*/
-/*Høyre hovedside*/
-    .sideSlide3 {
-        background-color: rgb(255, 255, 255);
-    }
-/*SLAGORD SISTE SLIDE*/
-        .slagOrdSlide3 {
-            margin-left: 15vw;
+    /*Høyre hovedside*/
+        .sideSlide3 {
+            background-color: rgb(255, 255, 255);
+        }
+/*---------------------------------------------------------------------------------------*/
+    /*SLAGORD SISTE SLIDE*/
+            .slagOrdSlide3 {
+                margin-left: 12vw;
+                margin-top: 13vh;
+                color: indigo;
+            }
+                .shapeTomo {
+                    font-size: 4vh;
+                }
+                .changeToday {
+                    font-weight: bolder;
+                    font-size: 6vw;
+                    text-transform: uppercase;
+                }
+    /*BILDEMENY med info*/
+        .bildeMenyInfo {
+            margin-left: 12vw;
             margin-top: 13vh;
-            color: indigo;
+            height: 40vh;
+            width: 60vw;
+            display: grid;
+            grid-template-columns: 20vw 20vw 20vw;
         }
-            .shapeTomo {
-                font-size: 4vh;
-            }
-            .changeToday {
-                font-weight: bolder;
-                font-size: 6vw;
-                text-transform: uppercase;
-            }
-/*BILDEMENY med info*/
-    .bildeMenyInfo {
-        margin-left: 15vw;
-        margin-top: 4vh;
-        height: 40vh;
-        width: 60vw;
-        display: grid;
-        grid-template-columns: 20vw 20vw 20vw;
 
+    /*infoSkriften over bildene*/
+           span[class^="infoOverBilde"]{
+               background-color: #f1f1f1;
+               opacity: .6;
+               color: indigo;
+               position: absolute;
+               z-index: 1;
+               margin-top: 8vh;
+               height: 8vh;
+               width: 20vw;
+               text-align: center;
+               padding-top: 3.4vh;
+            }
+    /*Bildene*/
+           .bildeInfo1 {
+               background-image: url("Images/bildeMeny.jpg");
+               background-size: cover;
+           }
+           .bildeInfo2 {
+               background-image: url("Images/bildeMeny1.jpg");
+               background-size: cover;
+           }
+            .bildeInfo3 {
+                background-image: url("Images/bildeMeny2.jpg");
+                background-size: cover;
+            }
+            .bildeInfo4 {
+                background-image: url("Images/bildeMeny3.jpg");
+                background-size: cover;
+            }
+            .bildeInfo5 {
+                background-image: url("Images/bildeMeny4.jpg");
+                background-size: cover;
+            }
+            .bildeInfo6 {
+                background-image: url("Images/bildeMeny5.jpg");
+                background-size: cover;
+            }
+/*---------------------------------------------------------------------------------------*/
+/*FOLLOW US PIL*/
+    .followUs {
+        transform: rotate(-90deg);
+        position: absolute;
+        font-size: 3vh;
+        font-weight: bolder;
+        color: indigo;
+        height: 10vh;
+        width: 10vw;
+        margin-top: 46vh;
+        margin-left: 70.5vw;
     }
-/*infoSkriften over bildene*/
-       span[class^="infoOverBilde"]{
-           background-color: #f1f1f1;
-           opacity: .7;
-           position: absolute;
-           z-index: 1;
-           margin-top: 8vh;
-           height: 8vh;
-           width: 20vw;
-           text-align: center;
-           padding-top: 3.4vh;
+
+    .sosialeMedier {
+        flex-direction: column;
+        width: 4vw;
+        height: 100vh;
+        position: absolute;
+        margin-top: 0;
+        margin-left: 78vw;
+        color: indigo;
+        font-size: 5vh;
+    }
+        i[class^="sosMed"]{
+            margin-top: 8vh;
+            cursor: pointer;
         }
-/*Bildene*/
-       .bildeInfo1 {
-           background-image: url("Images/bildeMeny.jpg");
-           background-size: cover;
-       }
-       .bildeInfo2 {
-           background-image: url("Images/bildeMeny1.jpg");
-           background-size: cover;
-       }
-        .bildeInfo3 {
-            background-image: url("Images/bildeMeny2.jpg");
-            background-size: cover;
+            i[class^="sosMed"]:hover {
+                color: #f1f1f1;
+                background-color: indigo;
+                border-radius: 30%;
+                transform: scale(1.3);
+                transition: transform 0.01s;
+            }
+/*---------------------------------------------------------------------------------------*/
+
+/*Side meny slide3*/
+/*Sørger for å dekke hele siste side*/
+.slide3MenyContainer {
+    position: absolute;
+    top: 0;
+    left: 200vw;
+    height: 100%;
+    width: 100%;
+}
+    .slide3Meny {
+        background-color: rgb(240, 240, 240);
+        position: absolute;
+        margin-left: 82vw;
+        margin-top: 0;
+        width: 18vw;
+        height: 100vh;
+    }
+
+    /*LOGO*/
+        .slide3menyLogo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 20vh;
+            width: 9vw;
+            padding: 2vh;
         }
-        .bildeInfo4 {
-            background-image: url("Images/bildeMeny3.jpg");
-            background-size: cover;
-        }
-        .bildeInfo5 {
-            background-image: url("Images/bildeMeny4.jpg");
-            background-size: cover;
-        }
-        .bildeInfo6 {
-            background-image: url("Images/bildeMeny5.jpg");
-            background-size: cover;
-        }
+
+        /*MENY*/
+            .ulMeny3 {
+                list-style-type: none;
+                color: indigo;
+                text-transform: uppercase;
+                font-weight: bolder;
+                line-height: 5vh;
+                cursor: pointer;
+            }
+                .slide3menyPunkt:hover {
+                    transform: scale(1.1);
+                    transition: transform 0.03s;
+                }
+/*skriv nederst på sidemenyen*/
+                    .slide3menyBunn {
+                        font-weight: lighter;
+                        font-size: 1vh;
+                        bottom: 1px;
+                    }
