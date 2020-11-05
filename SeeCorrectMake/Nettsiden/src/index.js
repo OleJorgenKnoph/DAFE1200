@@ -142,7 +142,7 @@ console.log("HEI");
         dropdown.style.display = "block";
         console.log("1");
     }
-    /*DENNE FUNKER IKKE*/
+    /*DENNE FUNKER IKKE sjekk*/ /*hmm*/
         else if (dropdown.element.style.display === "block"){
             pilElement.style.transform = 'rotate(180deg)';
             dropdown.style.display = "none";
