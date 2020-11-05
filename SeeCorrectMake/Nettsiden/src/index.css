@@ -258,7 +258,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
                         color: rgb(68, 58, 54);
                     }
         /*Overskrift announcements*/
-                        .info1Overskrift {
+   -                     .info1Overskrift {
                            position: relative;
                             top: 7px;
                         }
@@ -412,7 +412,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
 }
     .baksideFlip1 {
     background-color: indigo;
-        opacity: .5;
+    opacity: .5;
     color: white;
     transform: rotateY(180deg);
     letter-spacing: 1px;
@@ -553,5 +553,66 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
 /*---------------------------------------------------------------------------------------*/
 /*Høyre hovedside*/
     .sideSlide3 {
-        background-color: lime;
+        background-color: rgb(255, 255, 255);
     }
+/*SLAGORD SISTE SLIDE*/
+        .slagOrdSlide3 {
+            margin-left: 15vw;
+            margin-top: 13vh;
+            color: indigo;
+        }
+            .shapeTomo {
+                font-size: 4vh;
+            }
+            .changeToday {
+                font-weight: bolder;
+                font-size: 6vw;
+                text-transform: uppercase;
+            }
+/*BILDEMENY med info*/
+    .bildeMenyInfo {
+        margin-left: 15vw;
+        margin-top: 4vh;
+        height: 40vh;
+        width: 60vw;
+        display: grid;
+        grid-template-columns: 20vw 20vw 20vw;
+
+    }
+/*infoSkriften over bildene*/
+       span[class^="infoOverBilde"]{
+           background-color: #f1f1f1;
+           opacity: .7;
+           position: absolute;
+           z-index: 1;
+           margin-top: 8vh;
+           height: 8vh;
+           width: 20vw;
+           text-align: center;
+           padding-top: 3.4vh;
+        }
+/*Bildene*/
+       .bildeInfo1 {
+           background-image: url("Images/bildeMeny.jpg");
+           background-size: cover;
+       }
+       .bildeInfo2 {
+           background-image: url("Images/bildeMeny1.jpg");
+           background-size: cover;
+       }
+        .bildeInfo3 {
+            background-image: url("Images/bildeMeny2.jpg");
+            background-size: cover;
+        }
+        .bildeInfo4 {
+            background-image: url("Images/bildeMeny3.jpg");
+            background-size: cover;
+        }
+        .bildeInfo5 {
+            background-image: url("Images/bildeMeny4.jpg");
+            background-size: cover;
+        }
+        .bildeInfo6 {
+            background-image: url("Images/bildeMeny5.jpg");
+            background-size: cover;
+        }
