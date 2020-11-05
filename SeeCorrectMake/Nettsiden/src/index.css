@@ -386,10 +386,10 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
                 font-size: 4vh;
             }
             /*Sørger for at de kortene har forskjellig farger*/
-                div[class*="cards1"] {
+                div[class^="cards1"] {
                     background: rgb(248, 248, 248);
                 }
-                div[class*="cards2"] {
+                div[class^="cards2"] {
                     background: rgb(240, 240, 240);
                 }
                 /*ikoner og skrift*/
@@ -399,6 +399,26 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
 
                 }
 
+/*ATTRIBUTTER TIL FORSIDE OG BAKSIDE TIL KORTENE*/
+.cards1, .cards2, .baksideFlip1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+    .baksideFlip1 {
+    background-color: indigo;
+    color: white;
+    transform: rotateY(180deg);
+    letter-spacing: 1px;
+    line-height: 3.8vh;
+}
+        .overskriftFlipCard {
+    font-weight: bolder;
+    font-size: 4vh;
+}
+/*BUSINESS AND INNOVATION*/
                 .flipCard1 {
                     background-color: transparent;
                     width: 20vw;
@@ -417,30 +437,106 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
                         .flipCard1:hover .flipCardInner1 {
                             transform: rotateY(180deg);
                         }
-                            .cards11, .baksideFlip1 {
-                                position: absolute;
-                                width: 100%;
-                                height: 100%;
-                                -webkit-backface-visibility: hidden; /* Safari */
-                                backface-visibility: hidden;
+/*CREATION AND SIMULATION*/
+                    .flipCard2 {
+                        background-color: transparent;
+                        width: 20vw;
+                        height: 33vh;
+                        border: 1px solid #f1f1f1;
+                        /*perspective: 1000px;*/
+                    }
+                        .flipCardInner2 {
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            transition: transform 0.8s;
+                            transform-style: preserve-3d;
+                        }
+                            .flipCard2:hover .flipCardInner2 {
+                                transform: rotateY(180deg);
                             }
-                                .baksideFlip1 {
-                                    background-color: dodgerblue;
-                                    color: white;
-                                    transform: rotateY(180deg);
-                                    letter-spacing: 1px;
-                                    line-height: 3.8vh;
-                                }
-                                    .overskriftFlipCard {
-                                        font-weight: bolder;
-                                        font-size: 4vh;
-                                    }
+/*CYBER SECURITY*/
+                    .flipCard3 {
+                        background-color: transparent;
+                        width: 20vw;
+                        height: 33vh;
+                        border: 1px solid #f1f1f1;
+                        perspective: 1000px;
+                    }
+                        .flipCardInner3 {
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            transition: transform 0.8s;
+                            transform-style: preserve-3d;
+                        }
+                            .flipCard3:hover .flipCardInner3 {
+                            transform: rotateY(180deg);
+                        }
+/*DIGITAL ARTS*/
+                    .flipCard4 {
+                        background-color: transparent;
+                        width: 20vw;
+                        height: 33vh;
+                        border: 1px solid #f1f1f1;
+                        perspective: 1000px;
+                    }
+                        .flipCardInner4 {
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            transition: transform 0.8s;
+                            transform-style: preserve-3d;
+                        }
+                            .flipCard4:hover .flipCardInner4 {
+                            transform: rotateY(180deg);
+                        }
+/*GAME STUDIES*/
+                    .flipCard5 {
+                        background-color: transparent;
+                        width: 20vw;
+                        height: 33vh;
+                        border: 1px solid #f1f1f1;
+                        perspective: 1000px;
+                    }
+                        .flipCardInner5 {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        transition: transform 0.8s;
+                        transform-style: preserve-3d;
+                    }
+                            .flipCard5:hover .flipCardInner5 {
+                        transform: rotateY(180deg);
+                    }
+/*SOFTWARE ENGINEERING*/
+                    .flipCard6 {
+                        background-color: transparent;
+                        width: 20vw;
+                        height: 33vh;
+                        border: 1px solid #f1f1f1;
+                        perspective: 1000px;
+                    }
+                        .flipCardInner6 {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        transition: transform 0.8s;
+                        transform-style: preserve-3d;
+                    }
+                            .flipCard6:hover .flipCardInner6 {
+                        transform: rotateY(180deg);
+                    }
 
 /*Høyre DIV med bildet*/
     .slide2sideBildet {
         width: 30vw;
         height: 100vh;
-        background-color: ;
     }
 
 /*---------------------------------------------------------------------------------------*/
