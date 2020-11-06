@@ -43,31 +43,76 @@ body {
         color: indigo;
     }
 /*---------------------------------------------------------------------------------------*/
-/*SIDEBAR-MENY*/
+/*SIDEBAR*/
 .infoMeny {
     list-style-type: none;
     position: fixed;
     bottom: 0;
 }
-    .infoMenyPunkt a {
+        li[class^="infoMenyPunkt"] a {
         text-decoration: none;
         color: indigo;
         line-height: 7vh;
         letter-spacing: 1.2px;
         font-weight: bolder;
-        font-size: 3vh;
+        font-size: 1.7vw;
         justify-content: space-evenly;
     }
 /*forstørrer skriften menyen når musa er over*/
-        .infoMenyPunkt a:hover {
+        li[class^="infoMenyPunkt"] a:hover {
             transform: scale(1.3);
             transition: transform 0.01s;
         }
-            /*de første mer informative punktene*/
-                .ulMeny3punk1 {
-                    font-size: 2.4vh;
-                    padding-bottom: 3vh;
-                }
+            /*Meny knappen nederst*/
+
+/*---------------------------------------------------------------------------------------*/
+/*Menyen som kommer ut når menu-knappen er klikket*/
+.sideBarMeny {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1vw;
+    color: #f1f1f1;
+    background-color: rgb(35, 31, 32);
+    position: fixed;
+    margin-left: 0;
+    margin-top: 0;
+    height: 100vh;
+    width: 25vw;
+    z-index: 2;
+ }
+/*SIDEBAR-MENYEN*/
+.sideBarMenyUl{
+    list-style-type: none;
+}
+/*hvert punkt*/
+    .sideBarMenyLi {
+            line-height: 7vh;
+            cursor: pointer;
+    }
+    .sideBarMenyLi:hover {
+        transform: scale(1.1);
+        transition: transform 0.1s;
+    }
+        i[class^="+ "]{
+            position: relative;
+            float: right;
+            display: inline;
+            line-height: 7vh;
+            margin-right: 1vw;
+        }
+        /*exit knapp som lukker menyen*/
+            i[class^="exit"]{
+                position: absolute;
+                color: #f1f1f1;
+                margin-top: 20vh;
+                margin-left: 15vw;
+                font-size: 8vh;
+                cursor: pointer;
+            }
+            i[class^="exit"]:hover{
+                transform: scale(1.1);
+                transition: transform 0.1s;
+            }
 /*---------------------------------------------------------------------------------------*/
 /*Hele siden med de tre hovedsidene*/
 .innholdSide {
@@ -690,6 +735,11 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
         }
 
         /*MENY*/
+    /*de første mer informative punktene*/
+    .ulMeny3punk1 {
+        font-size: 2.4vh;
+        padding-bottom: 3vh;
+    }
             .ulMeny3 {
                 list-style-type: none;
                 color: indigo;
