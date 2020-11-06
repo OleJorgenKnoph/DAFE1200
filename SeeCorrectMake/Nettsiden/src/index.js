@@ -1,30 +1,11 @@
 
 /*-----------------------------------------------------------------------------------------*/
-/*som gjør som sidemenyen slider ut når menu er klikket*/
-let menuKnapp = document.getElementsByClassName("infoMenyPunkt1")[0];
-let exitMenuKnapp = document.getElementsByClassName("exit fas fa-times")[0];
-let sideBarMeny = document.getElementsByClassName("sideBarMeny")[0];
-
-
-    exitMenuKnapp.addEventListener("click", sideBarMenuSlide);
-    menuKnapp.addEventListener("click", sideBarMenuSlide);
-
-function sideBarMenuSlide() {
-    console.log("0");
-    if (window.getComputedStyle(sideBarMeny).getPropertyValue("visibility") === "hidden") {
-        sideBarMeny.style.visibility = "visible";
-        console.log("1");
-    } else {
-        sideBarMeny.style.visibility = "hidden";
-        console.log("2");
-    }
-}
-/*-----------------------------------------------------------------------------------------*/
 
 /*JS for å kollapse sidebar*/
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
+    console.log("1");
     if (document.body.scrollLeft > 5 || document.documentElement.scrollLeft > 5) {
         /*legger til klassen sidebarcollapse og logocollapse som har andre egenskaper i css*/
         document.getElementsByClassName("sideBar")[0].classList.add("sideBarCollapse");
@@ -173,3 +154,22 @@ function dropDownDegree() {
 }
 
 /*-----------------------------------------------------------------------------------------*/
+/*som gjør som sidemenyen slider ut når menu er klikket*/
+let menuKnapp = document.getElementsByClassName("infoMenyPunkt1")[0];
+let exitMenuKnapp = document.getElementsByClassName("exit fas fa-times")[0];
+let sideBarMeny = document.getElementsByClassName("sideBarMeny")[0];
+
+
+exitMenuKnapp.addEventListener("click", sideBarMenuSlide);
+menuKnapp.addEventListener("click", sideBarMenuSlide);
+
+function sideBarMenuSlide() {
+    console.log("0");
+    if (window.getComputedStyle(sideBarMeny).getPropertyValue("visibility") === "hidden") {
+        sideBarMeny.style.visibility = "visible";
+        console.log("1");
+    } else {
+        sideBarMeny.style.visibility = "hidden";
+        console.log("2");
+    }
+}

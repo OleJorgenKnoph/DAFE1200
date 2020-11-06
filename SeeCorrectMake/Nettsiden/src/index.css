@@ -20,8 +20,12 @@ body {
         margin-left: auto;
         margin-right: auto;
         padding: 2vh;
-        height: 32vh;
-        width: 26vh;
+        height: 16vw;
+        width: 15vw;
+    }
+    .logo:hover {
+        transform: scale(1.1);
+        transition: transform 0.03s;
     }
 /*---------------------------------------------------------------------------------------*/
             /*Disse klassen tilordnes i javascript når brukeren scroller*/
@@ -53,7 +57,6 @@ body {
         text-decoration: none;
         color: indigo;
         line-height: 7vh;
-        letter-spacing: 1.2px;
         font-weight: bolder;
         font-size: 1.7vw;
         justify-content: space-evenly;
@@ -149,7 +152,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
             /*Skriften som skal være større*/
                     .span {
                         font-weight: bolder;
-                        font-size: 10vh;
+                        font-size: 7vw;
                         letter-spacing: .2vh;
                     }
                 /*skriften som varierer ord*/
@@ -194,7 +197,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
         /*DEGREE dropdown div*/
         .degreeDrop {
             display: block;
-            padding: 16px 8px;
+            padding: 2.5vw 1.5vw;
             border-bottom: 3px solid indigo;
             position: absolute;
             left: 30vw;
@@ -322,7 +325,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
                             float: left;
                             margin-top: 4vh;
                             margin-left: 1vw;
-                            position: relative;
+                            position: absolute;
                         }
         /*PIL til høyre og venstre*/
                             i[class^="infoPil"]{
@@ -367,7 +370,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
                                 margin-top: 4vh;
                                 margin-left: 1vw;
                                 color: white;
-                                position: relative;
+                                position: absolute;
                             }
         /*PIL til høyre og venstre*/
                             i[class^="pilInfo"]{
@@ -405,7 +408,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
             position: absolute;
             transform: rotate(-90deg);
             top: 32vh;
-            left: 90vw;
+            left: 87vw;
         }
         /*FIND YOUR FIT*/
             .hovedSideOverskrift {
@@ -437,14 +440,14 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
                 border: 1px black;
                 text-transform: uppercase;
                 color: indigo;
-                font-size: 4vh;
+                font-size: 3vw;
             }
             /*Sørger for at de kortene har forskjellig farger*/
                 div[class^="cards1"] {
                     background: rgb(248, 248, 248);
                 }
                 div[class^="cards2"] {
-                    background: lightgrey /*rgb(240, 240, 240)*/;
+                    background: lightgrey;
                 }
                 /*ikoner og skrift*/
                 i[class^="cards"]{
@@ -454,7 +457,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
                 }
 
 /*ATTRIBUTTER TIL FORSIDE OG BAKSIDE TIL KORTENE*/
-.cards1, .cards2, .baksideFlip1 {
+.cards1, .cards2, .baksideFlip1, .cards12, .cards21 {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -498,7 +501,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
                         width: 20vw;
                         height: 33vh;
                         border: 1px solid #f1f1f1;
-                        /*perspective: 1000px;*/
+                        perspective: 1000px;
                     }
                         .flipCardInner2 {
                             position: relative;
@@ -609,8 +612,8 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
 /*---------------------------------------------------------------------------------------*/
     /*SLAGORD SISTE SLIDE*/
             .slagOrdSlide3 {
-                margin-left: 12vw;
-                margin-top: 13vh;
+                margin-left: 9vw;
+                margin-top: 6vh;
                 color: indigo;
             }
                 .shapeTomo {
@@ -736,16 +739,19 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
 
         /*MENY*/
     /*de første mer informative punktene*/
-    .ulMeny3punk1 {
-        font-size: 2.4vh;
-        padding-bottom: 3vh;
+    .ulMenyInfo {
+        list-style-type: none;
+        color: indigo;
+        text-transform: uppercase;
+        padding: 2px;
+        margin-left: 2vw;
     }
             .ulMeny3 {
                 list-style-type: none;
                 color: indigo;
                 text-transform: uppercase;
                 font-weight: bolder;
-                line-height: 5vh;
+                line-height: 3vw;
                 cursor: pointer;
             }
                 .slide3menyPunkt:hover {
@@ -758,3 +764,285 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
                         font-size: 1vh;
                         bottom: 1px;
                     }
+
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+
+@media screen and ( max-width: 885px ) {
+
+/*Hele siden med de tre hovedsidene*/
+    .innholdSide {
+        width: auto;
+        height: 300vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+/*---------------------------------------------------------------------------------------*/
+
+/*Sidebar blir horisontal når siden blir smalere enn 800px*/
+    .sideBar {
+        width: 100vw;
+        height: 17vh;
+        position: fixed;
+        z-index: 2;
+        box-shadow: 7px 0 15px -2px rgb(75,13,128);
+    }
+        .sideBarMeny {
+            display: none;
+        }
+                            /*Disse klassen tilordnes i javascript når brukeren scroller*/
+                            .sideBarCollapse {
+                                width: 7vw;
+                                box-shadow: 7px 0 15px -2px rgb(75,13,128);
+                            }
+                            .logoCollapse {
+                                height: 12vh;
+                                width: 9vh;
+                            }
+/*---------------------------------------------------------------------------------------*/
+         /*slagord forsvinner*/
+            .slagOrd {
+                display: none;
+            }
+/*---------------------------------------------------------------------------------------*/
+            /*logo plasseres høyre*/
+                .logo {
+                    display: block;
+                    margin-top: 0;
+                    margin-left: 0;
+                    height: 15vh;
+                    width: 12vh;
+                }
+  /*---------------------------------------------------------------------------------------*/
+            /*listen blir horisontal*/
+                .infoMeny {
+                    list-style-type: none;
+                    position: fixed;
+                    bottom: 83vh;
+                    width: 100vw;
+                    height: 17vh;
+                    display: flex;
+                    flex-direction: row;
+                    margin-left: 60vw;
+                    margin-right: 5vw;
+                }
+                    li[class^="infoMenyPunkt"] a {
+                        text-decoration: none;
+                        color: indigo;
+                        font-size: 3vw;
+                        justify-content: space-evenly;
+                        margin-top: 12vh;
+                        margin-left: 3vw;
+                        left: 70vw;
+                        align-content: center;
+                        height: 6vh;
+                    }
+                        a[class^="-"] {
+                            padding-left: 1vw;
+                        }
+                        li[class^="infoMenyPunkt"] a:hover {
+                            color: #f1f1f1;
+                            background-color: indigo;
+                            border-radius: 20%;
+                        }
+                            /*Skjule tekst. Kun ikoner*/
+                                .skjulTekst {
+                                    font-size: 0;
+                                }
+/*---------------------------------------------------------------------------------------*/
+
+/*DIV-elemente med skriften på forsiden*/
+.hovedskrift {
+        left: 12vw;
+        position: absolute;
+        top: 17vh;
+        font-family: Arial, serif;
+        color: indigo;
+
+    }
+
+/*---------------------------------------------------------------------------------------*/
+
+/*Får degreedrop til å forsvinne*/
+    .degreeDrop {
+        left: 12vw;
+    }
+
+/*---------------------------------------------------------------------------------------*/
+
+/*endrer nedre menyen til å dekke hele siden*/
+    .nedreMeny {
+        margin-left: 0;
+        width: 100vw;
+        height: 21vh;
+        bottom: 0;
+        text-align: center;
+    }
+        /*Venstre nedre info-meny*/
+        .nedreMenyInfo1 {
+            background-color: rgb(248, 248, 248);
+            width: 43vw;
+            color: rgb(68, 58, 54);
+        }
+            /*Midtre infomeny*/
+            .nedreMenyInfo2 {
+                background-color: rgb(160, 198, 98);
+                width: 17vw;
+            }
+                /*Høyre infomeny*/
+                .nedreMenyInfo3 {
+                    background-color: rgb(168, 18, 44);
+                    width: 40vw;
+                            }
+/*---------------------------------------------------------------------------------------*/
+    /*PILENE for sideskift skjules*/
+    .arrowRight, .arrowRight1, .arrowLeft, .arrowLeft1 {
+        display: none;
+    }
+/*---------------------------------------------------------------------------------------*/
+    /*side2*/
+        /*bildet forsvinner*/
+            .slide2sideBildet {
+                display: none;
+    }
+
+/*Flip-cards dekker hele siden*/
+    /*DIV med info-cards*/
+    .degreeFlipDiv {
+        width: 100vw;
+        height: 83vh;
+        margin-top: 17vh;
+    }
+        /*DIV for å sortere cards*/
+        .degreeCards {
+            display: grid;
+            grid-template-columns: 33vw 33vw 33vw;
+            height: 83vh;
+        }
+            /*Fyller skjermen*/
+                .flipCard1, .flipCard2, .flipCard3, .flipCard4, .flipCard5, .flipCard6 {
+                    width: 33vw;
+                    height: 41.5vh;
+            }
+                /*endrer slik at farge er riktig*/
+                        .cards21 {
+                            background-color: rgb(248, 248, 248) !important ;
+                        }
+                        .cards12 {
+                            background-color: lightgrey !important;
+                        }
+/*---------------------------------------------------------------------------------------*/
+    .sideOverskrift {
+        display: none;
+    }
+/*---------------------------------------------------------------------------------------*/
+    /*SLAGORD SISTE SLIDE*/
+    .slagOrdSlide3 {
+        margin-left: 9vw;
+        margin-top: 19vh;
+    }
+        .shapeTomo {
+            font-size: 2vh;
+        }
+            .changeToday {
+                font-size: 3vw;
+            }
+/*---------------------------------------------------------------------------------------*/
+    /*BILDEMENY med info*/
+    .bildeMenyInfo {
+        margin-left: 8vw;
+        margin-top: 6vh;
+        height: 40vh;
+        width: 75vw;
+        display: grid;
+        grid-template-columns: 25vw 25vw 25vw;
+justify-content: center;
+    }
+        /*infoSkriften over bildene*/
+        span[class^="infoOverBilde"]{
+            margin-top: 8vh;
+            height: 8vh;
+            width: 25vw;
+            text-align: center;
+            padding-top: 3.4vh;
+        }
+/*---------------------------------------------------------------------------------------*/
+    /*Fjerner "Follow Us"*/
+    .followUs {
+        display: none;
+    }
+/*---------------------------------------------------------------------------------------*/
+    .sosialeMedier {
+        width: 100vw;
+        height: 4vh;
+        position: absolute;
+        top: 280vh;
+        right: 280vw;
+        margin-top: 50vh;
+    }
+/*---------------------------------------------------------------------------------------*/
+    .slide3MenyContainer {
+        position: absolute;
+        top: 200vh;
+        left: 0;
+        height: 0;
+        width: 0;
+    }
+        .slide3Meny {
+            position: absolute;
+            margin-left: 0;
+            margin-top: 80vh;
+            width: 100vw;
+            height: 20vh;
+        }
+
+        /*LOGO*/
+        .slide3menyLogo {
+            display: block;
+            margin-left: 2vw;
+            height: 20vh;
+            width: 10vw;
+            padding: 2vh;
+        }
+
+        /*MENY*/
+        /*de første mer informative punktene
+        .ulMeny3punk1 {
+            font-size: 2.4vh;
+            padding-bottom: 3vh;
+        }*/
+        .ulMeny3 {
+            position: absolute;
+            height: 20vh;
+            width: auto;
+            margin-left: 30vw;
+            top: 0;
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 1.5vw;
+            line-height: ;
+        }
+        .slide3menyPunkt {
+            padding: 2vw;
+        }
+            .ulMenyInfo {
+                position: absolute;
+                height: 10vh;
+                width: 15vw;
+                top: -2vw;
+                left: 15vw;
+                font-size: 2vw;
+            }
+                .ulMenyInfo li {
+                    padding: .5vw;
+                }
+                .slide3menyBunn {
+                    position: absolute;
+                    top: 18.8vh;
+                }
+}
