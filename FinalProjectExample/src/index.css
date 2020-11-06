@@ -1,0 +1,124 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    /*Cover whole site*/
+    margin: 0;
+    font-family: Helvetica;
+}
+
+/*--------------------------------------------------------------*/
+/*MAIN SITE*/
+#mainSite {
+    height: 100vh;
+    width: 100vw;
+}
+
+/*Header*/
+header {
+    background-color: white;
+    height: 12vh;
+    width: 100vw;
+    position: fixed;
+    box-shadow: 1px 1px 7px 2px green;
+    z-index: 2;
+}
+    /*Header Logo*/
+        .headerLogo {
+            font-weight: bold;
+            color: white;
+            background-color: green;
+            border: 1vw solid springgreen;
+            height: 4vh;
+            width: 3vw;
+            border-radius: 50%;
+            text-align: center;
+            padding: 1vw;
+            position: absolute;
+            top: 1vh;
+            left: 3vw;
+            bottom: 1vh;
+        }
+
+/*MENU*/
+.headerMenu {
+            list-style-type: none;
+            display: flex;
+            float: right;
+            margin-right: 3vw;
+            margin-top: 5vh;
+        }
+    .menuLi {
+                font-size: 1.5vw;
+                padding-left: 5vw;
+                padding-right: 5vw;
+                padding-bottom: 1vh;
+                text-transform: uppercase;
+                font-weight: bolder;
+                border-bottom: 3px solid springgreen;
+            }
+        .menuLi a {
+        text-decoration: none;
+        color: green;
+    }
+            .menuLi:hover {
+                border-bottom: 3px solid green;
+                transform: scale(1.1);
+                transition: transform 0.1s;
+            }
+                .active {
+                    border-bottom: 3px solid green;
+                }
+
+    /*Background image*/
+.backgroundWindmills {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    opacity: .5;
+}
+
+/*Quote*/
+.quote {
+    height: 5vh;
+    width: 80vw;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    padding: 1vh 0;
+    position: absolute;
+    text-align: center;
+    top: 69vh; /* ;) */
+    left: 10vw;
+    font-size: 4vh;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
+}
+    .underQuote {
+        position: absolute;
+        top: 79vh;
+        left: 40%;
+        font-weight: bold;
+        font: icon;
+        color: white;
+        text-transform: uppercase;
+    }
+
+/*--------------------------------------------------------------*/
+/*CHALLENGE SITE*/
+#challengeSite {
+    height: 100vh;
+    width: 100vw;
+}
+
+    /*Tree Image*/
+    .challengeSiteTreePic {
+        position: relative;
+        right: 8vw;
+        top: 55vh;            /*AVSLUTTA HER*/
+        height: 35vh;
+        width: 35vw;
+        float: right;
+    }
