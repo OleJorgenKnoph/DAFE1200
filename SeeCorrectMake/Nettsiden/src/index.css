@@ -20,7 +20,7 @@ body {
         margin-left: auto;
         margin-right: auto;
         padding: 2vh;
-        height: 16vw;
+        height: 18vw;
         width: 15vw;
     }
     .logo:hover {
@@ -69,54 +69,7 @@ body {
             /*Meny knappen nederst*/
 
 /*---------------------------------------------------------------------------------------*/
-/*Menyen som kommer ut når menu-knappen er klikket*/
-.sideBarMeny {
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-size: 1vw;
-    color: #f1f1f1;
-    background-color: rgb(35, 31, 32);
-    position: fixed;
-    margin-left: 0;
-    margin-top: 0;
-    height: 100vh;
-    width: 25vw;
-    z-index: 2;
- }
-/*SIDEBAR-MENYEN*/
-.sideBarMenyUl{
-    list-style-type: none;
-}
-/*hvert punkt*/
-    .sideBarMenyLi {
-            line-height: 7vh;
-            cursor: pointer;
-    }
-    .sideBarMenyLi:hover {
-        transform: scale(1.1);
-        transition: transform 0.1s;
-    }
-        i[class^="+ "]{
-            position: relative;
-            float: right;
-            display: inline;
-            line-height: 7vh;
-            margin-right: 1vw;
-        }
-        /*exit knapp som lukker menyen*/
-            i[class^="exit"]{
-                position: absolute;
-                color: #f1f1f1;
-                margin-top: 20vh;
-                margin-left: 15vw;
-                font-size: 8vh;
-                cursor: pointer;
-            }
-            i[class^="exit"]:hover{
-                transform: scale(1.1);
-                transition: transform 0.1s;
-            }
-/*---------------------------------------------------------------------------------------*/
+
 /*Hele siden med de tre hovedsidene*/
 .innholdSide {
     width: 300vw;
@@ -303,13 +256,15 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
                     z-index: 0;
                     bottom: 0;
                     text-align: center;
+                    box-shadow: 8px 8px 8px 8px black;
                 }
 /*---------------------------------------------------------------------------------------*/
         /*Venstre nedre info-meny*/
                     .nedreMenyInfo1 {
-                        background-color: rgb(248, 248, 248);
+                        background-color: indigo;
+                        opacity: .8;
                         width: 40vw;
-                        color: rgb(68, 58, 54);
+                        color: white;
                     }
         /*Overskrift announcements*/
                         .info1Overskrift {
@@ -347,21 +302,24 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
 /*---------------------------------------------------------------------------------------*/
         /*Midtre infomeny*/
                     .nedreMenyInfo2 {
-                        background-color: rgb(160, 198, 98);
+                        background-color: #84AAB6;
                         width: 18vw;
+                        opacity: .4;
+                        box-shadow: 6px 6px 6px 6px black;
                     }
 
 /*---------------------------------------------------------------------------------------*/
         /*Høyre infomeny*/
                     .nedreMenyInfo3 {
-                        background-color: rgb(168, 18, 44);
+                        background-color: indigo;
+                        opacity: .8;
                         width: 40vw;
+                        color: white;
                     }
         /*Overskrift infomeny nede til høyre*/
                         .info3Overskrift {
                             position: relative;
                             top: 7px;
-                            color: white;
                             font-weight: bolder;
                         }
         /*de to tekst-divene nede til høyre*/
@@ -369,7 +327,6 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
                                 float: left;
                                 margin-top: 4vh;
                                 margin-left: 1vw;
-                                color: white;
                                 position: absolute;
                             }
         /*PIL til høyre og venstre*/
@@ -381,11 +338,12 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
                                 height: 3vh;
                                 width: 3vw;
                                 padding: 5px;
+                            background-color: rgb(54, 54, 60);
                                 color: white;
                             }
         /*Begge pilene kommer "ut" når man har pil over hver enkelt*/
                             i[class^="pilInfo"]:hover {
-                                transform: scale(1.5);
+                                transform: scale(1.2);
                                 transition: transform 0.1s;
                             }
 /*---------------------------------------------------------------------------------------*/
@@ -421,6 +379,25 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
                     font-size: 40px;
                     font-weight: lighter;
                 }
+/*---------------------------------------------------------------------------------------*/
+/*Info-tekst for å forklare flip-kortene*/
+.infoTekstCards {
+    background-color: lightblue;
+    opacity: .7;
+    border-radius: 20px;
+    position: absolute;
+    padding: 1vw;
+    top: 10vh;
+    left: 112vw;
+    width: 15vw;
+    text-align: center;
+}
+/*teksten*/
+    .cardsTekst {
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: indigo;
+    }
 /*---------------------------------------------------------------------------------------*/
 /*Midtre DIV med info-cards*/
     .degreeFlipDiv {
@@ -881,27 +858,42 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
         height: 21vh;
         bottom: 0;
         text-align: center;
+        box-shadow: none;
     }
         /*Venstre nedre info-meny*/
         .nedreMenyInfo1 {
-            background-color: rgb(248, 248, 248);
             width: 43vw;
-            color: rgb(68, 58, 54);
+            box-shadow: none;
         }
             /*Midtre infomeny*/
             .nedreMenyInfo2 {
-                background-color: rgb(160, 198, 98);
                 width: 17vw;
+                box-shadow: none;
             }
                 /*Høyre infomeny*/
                 .nedreMenyInfo3 {
-                    background-color: rgb(168, 18, 44);
                     width: 40vw;
+                    box-shadow: none;
                             }
 /*---------------------------------------------------------------------------------------*/
     /*PILENE for sideskift skjules*/
     .arrowRight, .arrowRight1, .arrowLeft, .arrowLeft1 {
         display: none;
+    }
+
+/*---------------------------------------------------------------------------------------*/
+/*Info-tekst for å forklare flip-kortene*/
+.infoTekstCards {
+        position: absolute;
+        top: 103vh;
+        left: 55vw;
+        width: 40vw;
+    }
+    /*teksten*/
+    .cardsTekst {
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: indigo;
     }
 /*---------------------------------------------------------------------------------------*/
     /*side2*/
@@ -1009,12 +1001,6 @@ justify-content: center;
             padding: 2vh;
         }
 
-        /*MENY*/
-        /*de første mer informative punktene
-        .ulMeny3punk1 {
-            font-size: 2.4vh;
-            padding-bottom: 3vh;
-        }*/
         .ulMeny3 {
             position: absolute;
             height: 20vh;
