@@ -408,7 +408,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
             position: absolute;
             transform: rotate(-90deg);
             top: 32vh;
-            left: 87vw;
+            left: 88vw;
         }
         /*FIND YOUR FIT*/
             .hovedSideOverskrift {
@@ -771,7 +771,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
 /*---------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
-
+/*Når skjermen blir mindre enn 885px*/
 @media screen and ( max-width: 885px ) {
 
 /*Hele siden med de tre hovedsidene*/
@@ -797,8 +797,7 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
         }
                             /*Disse klassen tilordnes i javascript når brukeren scroller*/
                             .sideBarCollapse {
-                                width: 7vw;
-                                box-shadow: 7px 0 15px -2px rgb(75,13,128);
+                                font-size: 0;
                             }
                             .logoCollapse {
                                 height: 12vh;
