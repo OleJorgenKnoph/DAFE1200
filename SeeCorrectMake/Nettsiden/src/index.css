@@ -158,41 +158,41 @@ div[class^="sideSlide"] { /*Velger alle div-klassene som starter med sideSlide*/
                 /*skriften som varierer ord*/
                         .dynamicOrd {
                             display: inline;
-                            -webkit-animation: fadeIn ease 3s infinite;
+                            -webkit-animation: fadeIn ease 2.9s infinite;
                         }
                         @-webkit-keyframes fadeIn {
                             0% {
-                                opacity:0;
+                                opacity:.1;
                             }
                             10% {
-                                opacity: .2;
+                                opacity: .3;
                             }
                             20% {
-                                opacity: .4;
-                            }
-                            30% {
                                 opacity: .6;
                             }
+                            30% {
+                                opacity: .8;
+                            }
                             40% {
-                                opacity: 8;
+                                opacity: 1;
                             }
                             50% {
                                 opacity: 1;
                             }
                             60% {
-                                opacity: .8;
+                                opacity: 1;
                             }
                             70% {
-                                opacity: .6;
+                                opacity: .8;
                             }
                             80% {
-                                opacity: .4;
+                                opacity: .6;
                             }
                             90% {
-                                opacity: .2;
+                                opacity: .3;
                             }
                             100% {
-                                opacity:0;
+                                opacity:.1;
                             }}
         /*DEGREE dropdown div*/
         .degreeDrop {
