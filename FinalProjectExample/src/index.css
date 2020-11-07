@@ -86,39 +86,145 @@ header {
     width: 80vw;
     border-bottom: 3px solid white;
     border-top: 3px solid white;
-    padding: 1vh 0;
+    padding: 1vw 0;
     position: absolute;
     text-align: center;
     top: 69vh; /* ;) */
     left: 10vw;
-    font-size: 4vh;
+    font-size: 2.2vw;
     font-weight: bolder;
+    font-family: "Bodoni 72";
+    letter-spacing: .7px;
     text-transform: uppercase;
     color: white;
 }
     .underQuote {
         position: absolute;
         top: 79vh;
-        left: 40%;
+        left: 40vw;
         font-weight: bold;
         font: icon;
         color: white;
         text-transform: uppercase;
+        font-family: "Bodoni 72";
+        letter-spacing: .7px;
     }
 
 /*--------------------------------------------------------------*/
 /*CHALLENGE SITE*/
 #challengeSite {
     height: 100vh;
-    width: 100vw;
+    width: 300vw;
+    display: flex;
+    flex-direction: row;
 }
+
+    /*CHALLENGE SITE 1*/
+    #challengeSite1 {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    /*NavBar Challenge Site 1*/
+            .challengeSite1Menu {
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                left: 56vw;
+                top: 18vh;
+                height: 4vh;
+                width: 35vw;
+                padding: 1.5vw;
+            }/*li*/
+                .site1MenuLi {
+                    font-size: 1vw;
+                    font-weight: bold;
+                    padding-left: 2vw;
+                    padding-right: 2vw;
+                    padding-bottom: 0.5vh;
+                    text-transform: uppercase;
+                    border-bottom: 3px solid green;
+                }
+                .site1MenuLi a {
+                    text-decoration: none;
+                    color: green;
+                }
+                    .active1, .site1MenuLi:hover {
+                        border-bottom: 3px solid lightgreen;
+                        color: lightgreen;
+                    }
+
 
     /*Tree Image*/
     .challengeSiteTreePic {
-        position: relative;
+        position: absolute;
         right: 8vw;
-        top: 55vh;            /*AVSLUTTA HER*/
+        top: 150vh;
         height: 35vh;
         width: 35vw;
         float: right;
+        border-radius: 25px;
+        box-shadow: 12px 29px 81px 8px rgba(22,40, 50,0.75);
     }
+
+        /*Textbox*/
+        .infoTextChallenge {
+            position: relative;
+            top: 40vh;
+            left: 5vw;
+            height: 40vh;
+            width: 42vw;
+            display: inline-block;
+            padding: 2vw;
+        }
+            /*Headline*/
+            .infoTextHeadline {
+                font-weight: bolder;
+                font-size: 3vw;
+                font-style: normal;
+                text-align: center;
+                text-transform: uppercase;
+                width: 30vw;
+            }
+                /*InfoText*/
+                .infoText {
+                    letter-spacing: 1px;
+                    line-height: 2vw;
+                    font-size: 1.3vw;
+
+                }
+
+
+    /*CHALLENGE SITE 2*/
+    #challengeSite2 {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        background-color: orange;
+    }
+
+
+    /*CHALLENGE SITE 3*/
+    #challengeSite3 {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        background-color: indigo;
+    }
+
+/*--------------------------------------------------------------*/
+/*SOLUTION SITE*/
+#solutionSite {
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgrey;
+}
+
+/*--------------------------------------------------------------*/
+/*SOLUTION SITE*/
+#appSite {
+    height: 100vh;
+    width: 100vw;
+    background-color: lightskyblue;
+}
