@@ -173,7 +173,7 @@ header {
         /*Textbox*/
         .infoTextChallenge {
             position: relative;
-            top: 43vh;
+            top: 32vh;
             left: 5vw;
             height: 40vh;
             width: 42vw;
@@ -237,6 +237,19 @@ header {
 
 /*******************/
 /*SITE 3*/
+
+/*Image polluted city*/
+.pollutedImgSite3 {
+    position: relative;
+    right: 8vw;
+    top: 30vh;
+    height: 37vh;
+    width: 35vw;
+    float: right;
+    border-radius: 25px;
+    box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
+}
+
 /*--------------------------------------------------------------*/
 /*SOLUTION SITE*/
 #solutionSite {
@@ -251,6 +264,18 @@ header {
         width: 100vw;
     }
 
+    /*Image site 1*/
+    .solutionBulb {
+        position: relative;
+        right: 8vw;
+        top: 37vh;
+        height: 35vh;
+        width: 35vw;
+        float: right;
+        border-radius: 25px;
+        box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
+    }
+
 /*--------------------------------------------------------------*/
 /*SOLUTION SITE*/
 #appSite {
@@ -258,10 +283,21 @@ header {
     width: 300vw;
     display: flex;
     flex-direction: row;
-    background-color: lightskyblue;
 }
 
     #appSite1, #appSite2, #appSite3 {
         height: 100vh;
         width: 100vw;
+    }
+
+    /*Image*/
+    .appImg {
+        position: relative;
+        right: 18vw;
+        top: 25vh;
+        height: 55vh;
+        width: 25vw;
+        float: right;
+        border-radius: 25px;
+        box-shadow: 12px 29px 81px 10px rgba(15, 127, 18,0.75);
     }
