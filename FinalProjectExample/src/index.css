@@ -118,15 +118,22 @@ header {
     display: flex;
     flex-direction: row;
 }
+#appSite {
+    height: 100vh;
+    width: 300vw;
+    display: flex;
+    flex-direction: row;
+    background-color: lightskyblue;
+}
 
-    /*CHALLENGE SITE 1*/
-    #challengeSite1 {
-        height: 100vh;
-        width: 100vw;
-    }
+#challengeSite1, #challengeSite2, #challengeSite3 {
+    height: 100vh;
+    width: 100vw;
+}
 
-    /*NavBar Challenge Site 1*/
-            .challengeSite1Menu {
+
+    /*NavBar Site*/
+            .SiteMenu {
                 list-style-type: none;
                 display: flex;
                 flex-direction: row;
@@ -136,8 +143,8 @@ header {
                 height: 4vh;
                 width: 35vw;
                 padding: 1.5vw;
-            }/*li*/
-                .site1MenuLi {
+            }
+                .siteMenuLi {
                     font-size: 1vw;
                     font-weight: bold;
                     padding-left: 2vw;
@@ -146,11 +153,11 @@ header {
                     text-transform: uppercase;
                     border-bottom: 3px solid green;
                 }
-                .site1MenuLi a {
+                .siteMenuLi a {
                     text-decoration: none;
                     color: green;
                 }
-                    .active1, .site1MenuLi:hover {
+                    .active1, .siteMenuLi:hover {
                         border-bottom: 3px solid lightgreen;
                         color: lightgreen;
                     }
@@ -171,7 +178,7 @@ header {
         /*Textbox*/
         .infoTextChallenge {
             position: relative;
-            top: 40vh;
+            top: 37vh;
             left: 5vw;
             height: 40vh;
             width: 42vw;
@@ -217,14 +224,28 @@ header {
 /*SOLUTION SITE*/
 #solutionSite {
     height: 100vh;
-    width: 100vw;
+    width: 300vw;
+    display: flex;
+    flex-direction: row;
     background-color: lightgrey;
 }
+
+    #solutionSite1, #solutionSite2, #solutionSite3 {
+        height: 100vh;
+        width: 100vw;
+    }
 
 /*--------------------------------------------------------------*/
 /*SOLUTION SITE*/
 #appSite {
     height: 100vh;
-    width: 100vw;
+    width: 300vw;
+    display: flex;
+    flex-direction: row;
     background-color: lightskyblue;
 }
+
+    #appSite1, #appSite2, #appSite3 {
+        height: 100vh;
+        width: 100vw;
+    }

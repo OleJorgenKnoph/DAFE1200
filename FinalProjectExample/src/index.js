@@ -50,7 +50,7 @@ function selectActiveSite() {
 /*-------------------------------------------------*/
 /*MAKING THE MENULINK ON CHALLENGE SITE ACTIVE DEPENDING ON WHERE THE USER IS*/
 
-let challengeIntro = document.getElementById("intro")[0];
+let challengeIntro = document.getElementsByClassName("intro")[0];
 let challengeDescription = document.getElementsByClassName("description")[0];
 let challengeVisibility = document.getElementsByClassName("visibility")[0];
 /*let challengeMenu = document.getElementsByClassName("site1MenuLi")[0];*/
