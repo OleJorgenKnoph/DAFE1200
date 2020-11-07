@@ -31,7 +31,7 @@ function selectActiveSite() {
         challengeLink.classList.remove("active");
         appLink.classList.remove("active");
         }
-            else if (window.scrollY > window.innerHeight) {
+            else if (window.scrollY > window.innerHeight * 0.9) {
                 challengeLink.classList.add("active");
 
         mainLink.classList.remove("active");
@@ -47,44 +47,45 @@ function selectActiveSite() {
                 }
 }
 
-/*-------------------------------------------------*/
-/*MAKING THE MENULINK ON CHALLENGE SITE ACTIVE DEPENDING ON WHERE THE USER IS*/
+/*------------------------------------------------- DENNE FUNKER IKKE*//*
 
-let challengeIntro = document.getElementsByClassName("intro")[0];
-let challengeDescription = document.getElementsByClassName("description")[0];
-let challengeVisibility = document.getElementsByClassName("visibility")[0];
-/*let challengeMenu = document.getElementsByClassName("site1MenuLi")[0];*/
+/*MAKING THE MENULINK ON SITEs ACTIVE DEPENDING ON WHERE THE USER IS
 
-   /* challengeMenu.addEventListener("click", selectActiveSiteChallenge());*/
+let navLink1 = document.getElementsByClassName("1")[0];
+let navLink2 = document.getElementsByClassName("2")[0];
+let navLink3 = document.getElementsByClassName("3")[0];
+
+document.getElementsByClassName("siteMenuLi").onclick = selectActiveSiteChallenge();
 
 
-/*function selectActiveSiteChallenge() {*/
 
+function selectActiveSiteChallenge() {
+console.log("0")
 
     /*if the window is scrolled down furter than 200vh (2times the screen height) and horizontal
-    * more than 200vw*/
+    * more than 200vw
     if (window.scrollY > window.innerHeight * 1.9 && window.scrollX > window.innerWidth * 1.9) {
 
-        /*active class added visibility*/
-        challengeVisibility.classList.add("active1");
+        /*active class added visibility
+        navLink3.classList.add("active1");
 
-        /*active class removed from the others so its only 1 link active*/
-        challengeDescription.classList.remove("active1");
-        challengeIntro.classList.remove("active1");
+        /*active class removed from the others so its only 1 link active
+        navLink2.classList.remove("active1");
+        navLink1.classList.remove("active1");
 
     }
         else if (window.scrollY > window.innerHeight * 1.9 && window.scrollX > window.innerWidth) {
 
-            challengeDescription.classList.add("active1");
+            navLink2.classList.add("active1");
 
-            challengeIntro.classList.remove("active1");
-            challengeVisibility.classList.remove("active1");
+            navLink1.classList.remove("active1");
+            navLink3.classList.remove("active1");
         }
             else if (window.scrollY > window.innerHeight * 1.9 && window.scrollX > 0) {
-                challengeIntro.classList.add("active1");
+                navLink1.classList.add("active1");
 
-                challengeVisibility.classList.remove("active1");
-                challengeDescription.classList.remove("active1");
+                navLink3.classList.remove("active1");
+                navLink2.classList.remove("active1");
             }
 
-/*}*/
+}*/
